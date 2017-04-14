@@ -53,11 +53,11 @@ get_header();
                             <?php
                             // Previous/next post navigation.
                             the_post_navigation(array(
-                                'next_text' => '<span class="meta-nav" aria-hidden="true">' . __('Next', 'mystart') . '</span> ' .
-                                '<span class="screen-reader-text">' . __('Next post:', 'mystart') . '</span> ' .
+                                'next_text' => '<span class="meta-nav" aria-hidden="true">' . __('Next : ', 'mystart') . '</span> ' .
+                                '<span class="screen-reader-text">' . __('Next post :', 'mystart') . '</span> ' .
                                 '<span class="post-title">%title</span>',
-                                'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __('Previous', 'mystart') . '</span> ' .
-                                '<span class="screen-reader-text">' . __('Previous post:', 'mystart') . '</span> ' .
+                                'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __('Previous : ', 'mystart') . '</span> ' .
+                                '<span class="screen-reader-text">' . __('Previous post :', 'mystart') . '</span> ' .
                                 '<span class="post-title">%title</span>',
                             ));
                             ?>
