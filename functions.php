@@ -49,7 +49,7 @@ if (!function_exists('mystart_theme_setup')) {
         ));
 
         $defaults_custom_header = array(
-            'default-image' => IMAGES .'/home-bg.jpg',
+            'default-image' => IMAGES . '/home-bg.jpg',
             'width' => 1366,
             'height' => 600,
             'flex-height' => false,
@@ -185,6 +185,47 @@ if (!function_exists('mystart_widget_init')) {
                 'before_title' => '<h2 class="wigdeg-header">',
                 'after_title' => '</h2>'
             ));
+
+
+            register_sidebar(array(
+                'name' => __('Footer 1', 'mystart'),
+                'id' => 'footer-1',
+                'description' => __('Add widgets here to appear in your footer area 1.', 'mystart'),
+                'before_widget' => '<section id="%1$s" class="widget %2$s">',
+                'after_widget' => '</section>',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>',
+            ));
+
+            register_sidebar(array(
+                'name' => __('Footer 2', 'mystart'),
+                'id' => 'footer-2',
+                'description' => __('Add widgets here to appear in your footer area 2.', 'mystart'),
+                'before_widget' => '<section id="%1$s" class="widget %2$s">',
+                'after_widget' => '</section>',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>',
+            ));
+
+            register_sidebar(array(
+                'name' => __('Footer 3', 'mystart'),
+                'id' => 'footer-3',
+                'description' => __('Add widgets here to appear in your footer area 3.', 'mystart'),
+                'before_widget' => '<section id="%1$s" class="widget %2$s">',
+                'after_widget' => '</section>',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>',
+            ));
+
+            register_sidebar(array(
+                'name' => __('Footer 4', 'mystart'),
+                'id' => 'footer-4',
+                'description' => __('Add widgets here to appear in your footer area 4.', 'mystart'),
+                'before_widget' => '<section id="%1$s" class="widget %2$s">',
+                'after_widget' => '</section>',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>',
+            ));
         }
     }
 
@@ -217,7 +258,7 @@ if (!function_exists('mystart_scripts')) {
         wp_enqueue_script('slim-menu');
         wp_enqueue_script('swiper-jquery');
         wp_enqueue_script('main-js');
-        
+
         if (is_singular())
             wp_enqueue_script("comment-reply");
 

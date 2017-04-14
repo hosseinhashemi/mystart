@@ -1,55 +1,75 @@
 <?php
 /*
- # ===========================================
- # footer.php
- # 
- # footer contents.
- # ===========================================
-*/
+  # ===========================================
+  # footer.php
+  #
+  # footer contents.
+  # ===========================================
+ */
 ?>  
 
 
 <!-- Footer -->
-    <footer>
+<footer>
+
+    <div class="footer-widget">
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
-                    <p>
-                        <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mystart' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mystart' ), 'WordPress' ); ?></a>
-                    </p>
+
+                <?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
+                <div class="widget-column col-md-3 footer-widget-1">
+                    <?php dynamic_sidebar( 'footer-1' ); ?>
                 </div>
+                <?php } ?>
+                
+                
+                <?php if ( is_active_sidebar( 'footer-2' ) ) { ?>
+                <div class="widget-column col-md-3 footer-widget-2">
+                    <?php dynamic_sidebar( 'footer-2' ); ?>
+                </div>
+                <?php } ?>
+                
+                
+                <?php if ( is_active_sidebar( 'footer-3' ) ) { ?>
+                <div class="widget-column col-md-3 footer-widget-3">
+                    <?php dynamic_sidebar( 'footer-3' ); ?>
+                </div>
+                <?php } ?>
+                
+                
+                <?php if ( is_active_sidebar( 'footer-4' ) ) { ?>
+                <div class="widget-column col-md-3 footer-widget-4">
+                    <?php dynamic_sidebar( 'footer-4' ); ?>
+                </div>
+                <?php } ?>
+                
+                
+                
+
+                
+
+                </div><!--row -->
+                </di><!--container -->
+
+                </div>
+
+                <div class = "container">
+                <div class = "row">
+                <div class = "col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                <p class = "copyright text-muted">Copyright &copy;
+                Your Website 2016</p>
+                <p>
+                <a href = "<?php echo esc_url( __( 'https://wordpress.org/', 'mystart' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mystart' ), 'WordPress' );
+                ?></a>
+                </p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    
+
 <?php wp_footer(); ?>
 <div id="search">
     <button type="button" class="close">x</button>
