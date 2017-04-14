@@ -58,6 +58,17 @@ jQuery(document).ready(function ($) {
                 childrenIndenter: '&raquo;'
             });
 
+    //Swiper Slider: 
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+        speed: 1000,
+        nextButton:".swiper-button-next",
+        prevButton:".swiper-button-prev",
+        autoplay:4000
+    })
+
+
 
 
 });
