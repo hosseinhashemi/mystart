@@ -767,11 +767,24 @@ body ul.slimmenu li a{
 
 
 
+/* Section styles*/
+.section{
+    padding-bottom: 50px;
+}
+.section__header{
+    padding: 100px 0px 50px 0px;
+    text-align: center;
+}
+.section__bottom{
+    text-align: center;
+    padding: 70px 0px;
+}
 
-/* Feature Section*/
-#features {
-    padding-bottom: 80px;
-    background-color: #b3bfb9;
+
+/* Servises Section*/
+#servises {
+    padding-bottom: 100px;
+    background-color: #39dc82;
 }
 .service {
     width: 100%;
@@ -782,7 +795,7 @@ body ul.slimmenu li a{
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.service .icon-holder {
+.service__icon-holder {
     position: relative;
     top: 100px;
     display: inline-block;
@@ -792,26 +805,26 @@ body ul.slimmenu li a{
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.service .heading {
+.service__heading {
     position: relative;
     top: 80px;
     -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.service .icon-holder > i.icon {
+.service__icon-holder > i.icon {
     width: 40px;
     font-size: 35px;
 }
 .service:hover {
     border-color: #00a8ff;
 }
-.service:hover .icon-holder {
+.service:hover .service__icon-holder {
     top: -30px;
 }
-.service:hover .heading {
+.service:hover .service__heading {
     top: -30px;
 }
-.service .description {
+.service__description {
     width: 80%;
     margin: 0 auto;
     opacity: 0;
@@ -820,8 +833,9 @@ body ul.slimmenu li a{
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
+    font-size: 15px;
 }
-.service:hover .description {
+.service:hover .service__description {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
