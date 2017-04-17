@@ -268,6 +268,7 @@ if (!function_exists('mystart_scripts')) {
         wp_enqueue_style('slim-menu-css', THEMEROOT . '/assets/css/slimmenu.min.css');
         wp_enqueue_style('swiper-css', THEMEROOT . '/assets/css/swiper.min.css');
         wp_enqueue_style('main-css', THEMEROOT . '/assets/css/main.css');
+        wp_enqueue_style('fontawesome', THEMEROOT . '/assets/css/font-awesome.min.css');
     }
 
     add_action('wp_enqueue_scripts', 'mystart_scripts');
