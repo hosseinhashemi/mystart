@@ -231,6 +231,110 @@ if (has_post_thumbnail()) {
 </section>
 <!-- / About us -->
 
+
+<!-- Blog Section-->
+<section id="blog" class="section">             
+
+
+    <div class="section__header">
+        <h2 class="section__title">Latest Posts</h2>
+        <p class="section__description">Read more about our company</p>
+    </div>
+    <div class="container-fluid">
+
+
+
+        <div class="row">
+
+            <div class="col-md-10 col-md-offset-1">
+
+
+
+                <div class="post-item">
+
+                    <div class="post-item__image">
+                        <a href="#">
+                            <img src="<?php echo IMAGES; ?>/dummy-1.jpg" class="img-responsive" alt="some alt" />
+                        </a>
+                    </div>
+
+                    <div class="post-item__text">
+
+                        <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
+                        <p class="post-item__expert">
+                            VICE meets up with Joe Nickell, a longtime paranormal investigator
+                            who’s been called the real-life Scully. We travel with him to Roswell,
+                            NM on the called the real-life Scully
+                        </p>
+                    </div>
+
+                </div>
+                <!--/post-item-->
+
+                <div class="post-item">
+
+                    <div class="post-item__image">
+                        <a href="#">
+                            <img src="<?php echo IMAGES; ?>/dummy-2.jpg" class="img-responsive" alt="some alt" />
+                        </a>
+                    </div>
+
+                    <div class="post-item__text">
+
+                        <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
+                        <p class="post-item__expert">
+                            VICE meets up with Joe Nickell, a longtime paranormal investigator
+                            who’s been called the real-life Scully. We travel with him to Roswell,
+                            NM on the called the real-life Scully
+                        </p>
+                    </div>
+
+                </div>
+                <!--/post-item-->
+
+                <div class="post-item">
+
+                    <div class="post-item__image">
+                        <a href="#">
+                            <img src="<?php echo IMAGES; ?>/dummy-1.jpg" class="img-responsive" alt="some alt" />
+                        </a>
+                    </div>
+
+                    <div class="post-item__text">
+
+                        <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
+                        <p class="post-item__expert">
+                            VICE meets up with Joe Nickell, a longtime paranormal investigator
+                            who’s been called the real-life Scully. We travel with him to Roswell,
+                            NM on the called the real-life Scully
+                        </p>
+                    </div>
+
+                </div>
+                <!--/post-item-->
+
+
+
+
+
+
+
+            </div>
+            <!--/col-md-10-->
+
+        </div>
+        <!--/row-->
+
+        <div class="section__bottom">
+            <a href="#" class="hvr-sweep-to-right action-btn">View All Posts</a>
+        </div>
+
+    </div>
+    <!--/container--> 
+
+</section>
+<!-- / Blog Section-->
+
 <hr>
 
 <?php
