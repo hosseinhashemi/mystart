@@ -66,8 +66,14 @@ jQuery(document).ready(function ($) {
         nextButton:".swiper-button-next",
         prevButton:".swiper-button-prev",
         autoplay:4000
-    })
-
+    });
+    
+    
+    //About-us
+    $("#circle-1").percircle();
+    $("#circle-2").percircle();
+    $("#circle-3").percircle();
+    $("#circle-4").percircle();
 
 
 

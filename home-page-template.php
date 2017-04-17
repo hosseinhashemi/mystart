@@ -53,95 +53,183 @@ if (has_post_thumbnail()) {
 <section id="servises" class="section">
 
 
-                <div class="section__header">
-                    <h2 class="section__title">Services</h2>
-                    <p class="section__description">View Our services</p>
+    <div class="section__header">
+        <h2 class="section__title">Services</h2>
+        <p class="section__description">View Our services</p>
+    </div>
+
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-10 col-md-offset-1">
+
+                <div class="col-md-4">
+                    <!-- / service item -->
+                    <div class="service">
+
+                        <div class="service__icon-holder">
+                            <i class="icon glyphicon glyphicon-phone"></i>
+                        </div>
+
+                        <h4 class="service__heading">Responsive</h4>
+                        <p class="service__description">                             
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+                        </p>
+
+                    </div>
+                    <!-- / service item -->
+                </div>
+                <!-- / col-md-4 -->
+
+                <div class="col-md-4">
+                    <!-- / service item -->
+                    <div class="service">
+
+                        <div class="service__icon-holder">
+                            <i class="icon glyphicon glyphicon-phone"></i>
+                        </div>
+
+                        <h4 class="service__heading">Responsive</h4>
+                        <p class="service__description">                             
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        </p>
+
+                    </div>
+                    <!-- / service item -->
+                </div>
+                <!-- / col-md-4 -->
+
+                <div class="col-md-4">
+                    <!-- / service item -->
+                    <div class="service">
+
+                        <div class="service__icon-holder">
+                            <i class="icon glyphicon glyphicon-phone"></i>
+                        </div>
+
+                        <h4 class="service__heading">Responsive</h4>
+                        <p class="service__description">                             
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        </p>
+
+                    </div>
+                    <!-- / service item -->
+                </div>
+                <!-- / col-md-4 -->
+
+
+
+
+
+            </div>
+            <!-- /col-md-10 -->
+
+
+        </div>
+        <!-- / row-->
+
+    </div>
+    <!-- / container-->
+
+</section>
+<!-- /Servises -->
+
+
+
+<!--  About Us -->
+<section id="aboout-us" class="section">
+
+
+    <div class="section__header">
+        <h2 class="section__title">About Us</h2>
+        <p class="section__description">Read more about our company</p>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-6">
+                    <div class="about-us__img">
+                        <img src="<?php echo IMAGES . '/dummy-1.jpg' ?>" class="img-responsive"/>
+                    </div>
                 </div>
 
+                <div class="col-md-6">
+                    <div class="about-us__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
+                    </div>
+                </div>
+            </div>
 
-                <div class="container-fluid">
+        </div>
+        <!-- /row -->
+
+    </div>
+    <!-- /container-fluid-->
+
+    <div class="container">
+        <div class="skills">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
 
                     <div class="row">
 
-                        <div class="col-md-10 col-md-offset-1">
-
-                            <div class="col-md-4">
-                                <!-- / service item -->
-                                <div class="service">
-
-                                    <div class="service__icon-holder">
-                                        <i class="icon glyphicon glyphicon-phone"></i>
-                                    </div>
-
-                                    <h4 class="service__heading">Responsive</h4>
-                                    <p class="service__description">                             
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    </p>
-
-                                </div>
-                                <!-- / service item -->
-                            </div>
-                            <!-- / col-md-4 -->
-                            
-                            <div class="col-md-4">
-                                <!-- / service item -->
-                                <div class="service">
-
-                                    <div class="service__icon-holder">
-                                        <i class="icon glyphicon glyphicon-phone"></i>
-                                    </div>
-
-                                    <h4 class="service__heading">Responsive</h4>
-                                    <p class="service__description">                             
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    </p>
-
-                                </div>
-                                <!-- / service item -->
-                            </div>
-                            <!-- / col-md-4 -->
-                            
-                            <div class="col-md-4">
-                                <!-- / service item -->
-                                <div class="service">
-
-                                    <div class="service__icon-holder">
-                                        <i class="icon glyphicon glyphicon-phone"></i>
-                                    </div>
-
-                                    <h4 class="service__heading">Responsive</h4>
-                                    <p class="service__description">                             
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    </p>
-
-                                </div>
-                                <!-- / service item -->
-                            </div>
-                            <!-- / col-md-4 -->
-
-
-
-
-
+                        <div class="col-md-3">                 
+                            <div id="circle-1" data-percent="17" class="about-us__skill percircle animate"> </div>
+                            <h5 class="about-us__skill-title">jQuery</h5>
                         </div>
-                        <!-- /col-md-10 -->
 
+                        <div class="col-md-3">                 
+                            <div id="circle-2" data-percent="17" class="about-us__skill percircle animate"> </div>
+                            <h5 class="about-us__skill-title">jQuery</h5>
+                        </div>
+
+                        <div class="col-md-3">                 
+                            <div id="circle-3" data-percent="17" class="about-us__skill percircle animate"> </div>
+                            <h5 class="about-us__skill-title">jQuery</h5>
+                        </div>
+
+                        <div class="col-md-3">                 
+                            <div id="circle-4" data-percent="17" class="about-us__skill percircle animate"> </div>
+                            <h5 class="about-us__skill-title">jQuery</h5>
+                        </div>
 
                     </div>
-                    <!-- / row-->
+                    <!--/ Row-->
 
                 </div>
-                <!-- / container-->
+            </div>
+            <!-- / row -->
+        </div>
+        <!-- / skills -->
 
-            </section>
-<!-- /Servises -->
+    </div>
+    <!-- /container-fluid-->
+
+
+</div>
+<!-- / container-->
+
+</section>
+<!-- / About us -->
 
 <hr>
 

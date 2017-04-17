@@ -249,6 +249,7 @@ if (!function_exists('mystart_scripts')) {
         wp_register_script('slim-menu', JS . '/jquery.slimmenu.js', array('jquery'), false, false, true);
         wp_register_script('jquery-easing', JS . '/jquery.easing.1-4-1.min.js', array('jquery'), false, false, true);
         wp_register_script('swiper-jquery', JS . '/swiper.jquery.min.js', array('jquery'), false, false, true);
+        wp_register_script('percircle', JS . '/percircle.min.js', array('jquery'), false, false, true);
         wp_register_script('main-js', JS . '/main.js', false, false, true);
 
 
@@ -257,6 +258,7 @@ if (!function_exists('mystart_scripts')) {
         wp_enqueue_script('jquery-easing');
         wp_enqueue_script('slim-menu');
         wp_enqueue_script('swiper-jquery');
+        wp_enqueue_script('percircle');
         wp_enqueue_script('main-js');
 
         if (is_singular())
@@ -267,6 +269,7 @@ if (!function_exists('mystart_scripts')) {
         wp_enqueue_style('bootstrap-css', THEMEROOT . '/assets/css/bootstrap.css');
         wp_enqueue_style('slim-menu-css', THEMEROOT . '/assets/css/slimmenu.min.css');
         wp_enqueue_style('swiper-css', THEMEROOT . '/assets/css/swiper.min.css');
+        wp_enqueue_style('percircle-css', THEMEROOT . '/assets/css/percircle.min.css');
         wp_enqueue_style('main-css', THEMEROOT . '/assets/css/main.css');
         wp_enqueue_style('fontawesome', THEMEROOT . '/assets/css/font-awesome.min.css');
     }

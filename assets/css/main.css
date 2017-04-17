@@ -5,7 +5,7 @@
  */
 body {
     font-family: 'Lora', 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 17px;
     color: #333333;
 }
 p {
@@ -840,4 +840,29 @@ body ul.slimmenu li a{
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+}
+
+
+/* About-us section */
+#aboout-us{
+    background: #d1bf4a;
+}
+.skills{
+    padding: 50px 0 50px 0;
+}
+.about-us__skill{
+    float: none;
+    margin: 0 auto;
+    background-color: #d1bf4a;
+}
+.about-us__skill-title{
+    display: block;
+    text-align: center;
+    clear: both;
+}
+.about-us__skill:after{
+    transform: scale(1.09);
+}
+.about-us__desc{
+    text-align: justify;
 }
