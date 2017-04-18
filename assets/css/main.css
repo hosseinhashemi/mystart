@@ -874,7 +874,7 @@ body ul.slimmenu li a{
 
 
 
-/*Latest Blogs*/
+/* Latest Blogs */
 .post-item{
     display: block;
     width: 33.3333%;
@@ -903,4 +903,33 @@ body ul.slimmenu li a{
 }
 .post-item__expert{
     line-height: 20px;
+}
+
+
+
+/* Testimonial */
+#testimonials{
+    padding-bottom: 100px;
+    background-color: #f4f7f6;
+}
+.testimonial-item__img{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.testimonial-item__person{
+    float: left;
+    line-height: 70px;
+    padding: 8px 20px;
+}
+.testimonial-item__title{
+    font-weight: 400;
+    text-align: right;
+}
+.testimonial-item__pos{
+    font-weight: 400;
+    text-align: right;
+}
+.testimonial-item__text{
+    text-align: left;
 }

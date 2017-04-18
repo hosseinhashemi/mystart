@@ -335,6 +335,93 @@ if (has_post_thumbnail()) {
 </section>
 <!-- / Blog Section-->
 
+
+
+<!-- Testimonials Section-->
+<section id="testimonials" class="section">             
+
+
+    <div class="section__header">
+        <h2 class="section__title">Testimonials</h2>
+        <p class="section__description">Read more about our company</p>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="testimonial-item ">
+
+                    <p class="testimonial-item__text">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo IMAGES; ?>/dummy-3.jpg" />
+                    <div class="testimonial-item__person">
+                        <h6 class="testimonial-item__title">Sarah Cameron</h6>
+                        <h6 class="testimonial-item__pos">From BardiaWeb</h6>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testimonial-item ">
+
+                    <p class="testimonial-item__text">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo IMAGES; ?>/dummy-4.jpg" />
+                    <div class="testimonial-item__person">
+                        <h6 class="testimonial-item__title">Hossein Hashemi</h6>
+                        <h6 class="testimonial-item__pos">From BardiaWeb</h6>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testimonial-item ">
+
+                    <p class="testimonial-item__text">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, 
+                        sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat.
+                    </p>
+                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo IMAGES; ?>/dummy-3.jpg" />
+                    <div class="testimonial-item__person">
+                        <h6 class="testimonial-item__title">Kim Solon</h6>
+                        <h6 class="testimonial-item__pos">From BardiaWeb</h6>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /row-->
+    </div>
+    <!--/ container-->
+
+</section>
+<!-- / Testimonials Section-->
+
 <hr>
 
 <?php
