@@ -422,6 +422,29 @@ if (has_post_thumbnail()) {
 </section>
 <!-- / Testimonials Section-->
 
+
+<!--action section-->
+<?php
+$call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' . ');"';
+?>
+<div id="action-1" class="call-to-action section" <?php echo $call_to_action_background; ?>   >
+
+
+    <div class="container">
+
+        <div class="call-to-action__title">We Make things better!</div>
+        <div class="call-to-action__description">
+            It's the best of themes in the world you have ever see
+        </div>
+
+    </div>
+
+
+
+
+</div>
+<!-- /action section-->
+
 <hr>
 
 <?php
