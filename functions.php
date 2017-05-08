@@ -338,18 +338,11 @@ function _custom_nav_menu_item($title, $url, $order, $parent = 0) {
     return $item;
 }
 
-add_filter('wp_get_nav_menu_items', 'custom_nav_menu_items', 20, 2);
 
-function custom_nav_menu_items($items, $menu) {
-    // only add item to a specific menu
+add_filter( 'wp_nav_menu_items', 'add_search_to_nav', 10, 2 );
 
-    if ($menu->slug == 'mainmenu') {
-
-        // only add profile link if user is logged in
-
-        $items[] = _custom_nav_menu_item('Search', '#search', 30);
-    }
-
+function add_search_to_nav( $items, $args ){
+    $items .= '<li><a href="#search"><span class="fa fa-search"></span></a></li>';
     return $items;
 }
 

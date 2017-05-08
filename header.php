@@ -42,9 +42,13 @@
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                
-                <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
+            
+            <div class="site-brand">
+<!--                <a class="site-name" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
+                <p class="site-description"><?php bloginfo('description'); ?></p>-->
+                <a class="site-logo" href="<?php echo esc_url( home_url('/') ); ?>">
+                    <img src="<?php echo IMAGES.'/logo.png' ?>" />
+                </a>
             </div>
 
            
@@ -60,6 +64,7 @@
                 ));
             
             ?>
+            
             <!-- /.navbar-collapse -->
             
             

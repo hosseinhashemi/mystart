@@ -49,10 +49,10 @@ jQuery(document).ready(function ($) {
 
 
     //responsive menu
-    $('#menu-mainmenu').slimmenu(
+    $('.slimmenu').slimmenu(
             {
                 resizeWidth: '768',
-                collapserTitle: 'Main Menu',
+                collapserTitle: '',
                 animSpeed: 'medium',
                 indentChildren: true,
                 childrenIndenter: '&raquo;'

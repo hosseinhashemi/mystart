@@ -71,7 +71,7 @@ hr.small {
     letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
-    
+
     .navbar-custom .navbar-brand {
         color: rgba(0, 0, 0, 0.8);
         padding: 20px;
@@ -717,13 +717,38 @@ ul.meta-tags-list li{
     line-height: 36px;
     float: right;
 }
+.site-brand{
+    float: left;
+    min-height: 62px;
+}
+.site-name{
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 7px 0px 1px 0px;
 
+}
+.site-logo{
+    max-height: 65px;
+    width: auto;
+}
+.site-name:hover{
+    text-decoration: none !important;
+}
+.site-description{
+    margin: 0px;
+    display: block;
+    font-size: 14px;
+}
 
 /*Slim Navigation fix*/
 ul.slimmenu li>ul{
     padding-left: 0;
-        box-shadow: 0px 1px 3px 0px #ccc;
+    box-shadow: 0px 1px 3px 0px #ccc;
+    min-width: 200px !important;
 }
+
 body ul.slimmenu li{
     background-color: transparent;
     border:0;
@@ -735,6 +760,10 @@ body ul.slimmenu li a{
     font-weight: 300;
     font-size: 14px;
     text-decoration: none;
+}
+ul.slimmenu li ul li a{
+    line-height: 20px;
+    font-size: 12px;
 }
 ul.slimmenu li .sub-toggle:before{
     margin-right: 0;
@@ -788,8 +817,23 @@ ul.slimmenu li a:focus::after {
     -moz-transform: translateX(0px);
     transform: translateX(0px);
 }
-
-
+.main-nav-wrapper .menu-collapser {
+    position: absolute;
+    width: auto;
+    right: 0;
+    top: 0;
+    background: transparent !important;
+}
+.collapse-button{
+    padding: 13px 10px;
+    border-radius: 1px;
+    top: 13px;
+    transform: translate(0, 0); 
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0); 
+}
 
 /* Swiper Slider */
 .swiper-container {
