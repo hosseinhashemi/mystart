@@ -19,21 +19,19 @@ get_header();
 
 <!-- Slider -->
 <?php
-if (has_post_thumbnail()) {
-    $feat_image_url = wp_get_attachment_url(get_post_thumbnail_id());
-    $intro_background = 'style="background-image: url(' . $feat_image_url . ')"';
-} else {
-    $intro_background = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' . ');background-size:cover;"';
-}
+$intro_background_1 = 'style="background-image: url(' . IMAGES . '/home-bg-3.jpg' . ');background-size:cover;"';
+
+$intro_background_2 = 'style="background-image: url(' . IMAGES . '/home-bg-2.jpg' . ');background-size:cover;"';
+$intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' . ');background-size:cover;"';
 ?>
 
 <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" <?php echo $intro_background; ?> >Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide" <?php echo $intro_background_1; ?>  >Slide 1</div>
+        <div class="swiper-slide" <?php echo $intro_background_2; ?>>Slide 2</div>
+        <div class="swiper-slide" <?php echo $intro_background_3; ?> >Slide 3</div>
         ...
     </div>
     <!-- If we need pagination -->
@@ -145,88 +143,95 @@ if (has_post_thumbnail()) {
 <!-- /Servises -->
 
 
-
+<?php
+$about_us_background = 'style="background-image: url(' . IMAGES . '/about-us-bg.jpg' . ');background-size:cover;"';
+?>
 <!--  About Us -->
-<section id="aboout-us" class="section">
+<section id="about-us" class="section" <?php echo $about_us_background; ?> >
+    <div class="about-us__overlay"></div>
 
+    <div class="about-us__holder">
 
-    <div class="section__header">
-        <h2 class="section__title">About Us</h2>
-        <p class="section__description">Read more about our company</p>
-    </div>
-
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="col-md-6">
-                    <div class="about-us__img">
-                        <img src="<?php echo IMAGES . '/dummy-1.jpg' ?>" class="img-responsive"/>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="about-us__desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                    </div>
-                </div>
-            </div>
-
+        <div class="section__header">
+            <h2 class="section__title">About <span>TERAFORM</span></h2>
+            <p class="section__description">Read more about our company</p>
         </div>
-        <!-- /row -->
+        <!--/section__header-->
 
-    </div>
-    <!-- /container-fluid-->
+        <div class="container">
 
-    <div class="container">
-        <div class="skills">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-
-                    <div class="row">
-
-                        <div class="col-md-3">                 
-                            <div id="circle-1" data-percent="17" class="about-us__skill percircle animate"> </div>
-                            <h5 class="about-us__skill-title">jQuery</h5>
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-6">
+                        <div class="about-us__img">
+                            <img src="<?php echo IMAGES . '/dummy-1.jpg' ?>" class="img-responsive"/>
                         </div>
+                    </div>
 
-                        <div class="col-md-3">                 
-                            <div id="circle-2" data-percent="17" class="about-us__skill percircle animate"> </div>
-                            <h5 class="about-us__skill-title">jQuery</h5>
-                        </div>
+                    <div class="col-md-6">
+                        <div class="about-us__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-                        <div class="col-md-3">                 
-                            <div id="circle-3" data-percent="17" class="about-us__skill percircle animate"> </div>
-                            <h5 class="about-us__skill-title">jQuery</h5>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="col-md-3">                 
-                            <div id="circle-4" data-percent="17" class="about-us__skill percircle animate"> </div>
-                            <h5 class="about-us__skill-title">jQuery</h5>
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container-fluid-->
+
+        <div class="container">
+            <div class="skills">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <div class="row">
+
+                            <div class="col-md-3">                 
+                                <div id="circle-1" data-percent="67" class="about-us__skill percircle animate"> </div>
+                                <h5 class="about-us__skill-title">jQuery</h5>
+                            </div>
+
+                            <div class="col-md-3">                 
+                                <div id="circle-2" data-percent="17" class="about-us__skill percircle animate"> </div>
+                                <h5 class="about-us__skill-title">jQuery</h5>
+                            </div>
+
+                            <div class="col-md-3">                 
+                                <div id="circle-3" data-percent="97" class="about-us__skill percircle animate"> </div>
+                                <h5 class="about-us__skill-title">jQuery</h5>
+                            </div>
+
+                            <div class="col-md-3">                 
+                                <div id="circle-4" data-percent="47" class="about-us__skill percircle animate"> </div>
+                                <h5 class="about-us__skill-title">jQuery</h5>
+                            </div>
+
                         </div>
+                        <!--/ Row-->
 
                     </div>
-                    <!--/ Row-->
-
                 </div>
+                <!-- / row -->
             </div>
-            <!-- / row -->
+            <!-- / skills -->
+
         </div>
-        <!-- / skills -->
+        <!-- /container-fluid-->
+
 
     </div>
-    <!-- /container-fluid-->
-
-
-</div>
-<!-- / container-->
+    <!-- / about-us__holder-->
 
 </section>
 <!-- / About us -->

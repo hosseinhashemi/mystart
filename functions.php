@@ -272,7 +272,7 @@ if (!function_exists('mystart_scripts')) {
         wp_enqueue_style('percircle-css', THEMEROOT . '/assets/css/percircle.min.css');
         wp_enqueue_style('main-css', THEMEROOT . '/assets/css/main.css');
         wp_enqueue_style('fontawesome', THEMEROOT . '/assets/css/font-awesome.min.css');
-        wp_enqueue_style('google-font',  'https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+        wp_enqueue_style('google-font',  'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700');
         
         
     }
