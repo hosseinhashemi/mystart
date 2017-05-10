@@ -254,70 +254,74 @@ $about_us_background = 'style="background-image: url(' . IMAGES . '/about-us-bg.
             <div class="col-md-10 col-md-offset-1">
 
 
+                <div class="col-md-4">
+                    <div class="post-item">
 
-                <div class="post-item">
+                        <div class="post-item__image">
+                            <a href="#">
+                                <img src="<?php echo IMAGES; ?>/dummy-1.jpg" class="img-responsive" alt="some alt" />
+                            </a>
+                        </div>
 
-                    <div class="post-item__image">
-                        <a href="#">
-                            <img src="<?php echo IMAGES; ?>/dummy-1.jpg" class="img-responsive" alt="some alt" />
-                        </a>
+                        <div class="post-item__text">
+
+                            <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
+                            <p class="post-item__expert">
+                                VICE meets up with Joe Nickell, a longtime paranormal investigator
+                                who’s been called the real-life Scully. We travel with him to Roswell,
+                                NM on the called the real-life Scully
+                            </p>
+                        </div>
+
                     </div>
-
-                    <div class="post-item__text">
-
-                        <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
-                        <p class="post-item__expert">
-                            VICE meets up with Joe Nickell, a longtime paranormal investigator
-                            who’s been called the real-life Scully. We travel with him to Roswell,
-                            NM on the called the real-life Scully
-                        </p>
-                    </div>
-
+                    <!--/post-item-->
                 </div>
-                <!--/post-item-->
 
-                <div class="post-item">
+                <div class="col-md-4">
+                    <div class="post-item">
 
-                    <div class="post-item__image">
-                        <a href="#">
-                            <img src="<?php echo IMAGES; ?>/dummy-2.jpg" class="img-responsive" alt="some alt" />
-                        </a>
+                        <div class="post-item__image">
+                            <a href="#">
+                                <img src="<?php echo IMAGES; ?>/dummy-2.jpg" class="img-responsive" alt="some alt" />
+                            </a>
+                        </div>
+
+                        <div class="post-item__text">
+
+                            <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
+                            <p class="post-item__expert">
+                                VICE meets up with Joe Nickell, a longtime paranormal investigator
+                                who’s been called the real-life Scully. We travel with him to Roswell,
+                                NM on the called the real-life Scully
+                            </p>
+                        </div>
+
                     </div>
-
-                    <div class="post-item__text">
-
-                        <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
-                        <p class="post-item__expert">
-                            VICE meets up with Joe Nickell, a longtime paranormal investigator
-                            who’s been called the real-life Scully. We travel with him to Roswell,
-                            NM on the called the real-life Scully
-                        </p>
-                    </div>
-
+                    <!--/post-item-->
                 </div>
-                <!--/post-item-->
 
-                <div class="post-item">
+                <div class="col-md-4">
+                    <div class="post-item">
 
-                    <div class="post-item__image">
-                        <a href="#">
-                            <img src="<?php echo IMAGES; ?>/dummy-1.jpg" class="img-responsive" alt="some alt" />
-                        </a>
+                        <div class="post-item__image">
+                            <a href="#">
+                                <img src="<?php echo IMAGES; ?>/dummy-1.jpg" class="img-responsive" alt="some alt" />
+                            </a>
+                        </div>
+
+                        <div class="post-item__text">
+
+                            <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
+                            <p class="post-item__expert">
+                                VICE meets up with Joe Nickell, a longtime paranormal investigator
+                                who’s been called the real-life Scully. We travel with him to Roswell,
+                                NM on the called the real-life Scully
+                            </p>
+                        </div>
+
                     </div>
-
-                    <div class="post-item__text">
-
-                        <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
-                        <p class="post-item__expert">
-                            VICE meets up with Joe Nickell, a longtime paranormal investigator
-                            who’s been called the real-life Scully. We travel with him to Roswell,
-                            NM on the called the real-life Scully
-                        </p>
-                    </div>
-
+                    <!--/post-item-->
                 </div>
-                <!--/post-item-->
-
 
 
 
@@ -430,10 +434,10 @@ $about_us_background = 'style="background-image: url(' . IMAGES . '/about-us-bg.
 
 <!--action section-->
 <?php
-$call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' . ');"';
+$call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-bg-3.jpg' . ');"';
 ?>
 <div id="action-1" class="call-to-action section" <?php echo $call_to_action_background; ?>   >
-
+    <div class="call-to-action__overlay"></div>
 
     <div class="container">
 
@@ -450,7 +454,7 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
 </div>
 <!-- /action section-->
 
-<hr>
+
 
 <?php
 /* Load footer.php  */
