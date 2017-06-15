@@ -355,3 +355,10 @@ function mystart_content_width() {
 }
 
 add_action('after_setup_theme', 'mystart_content_width', 0);
+
+
+
+/* -------------------------------------------
+ *  10 - CUSTOMIZER
+ * ------------------------------------------- */
+load_template(THEMEROOT . '/includes/customizer.php');
