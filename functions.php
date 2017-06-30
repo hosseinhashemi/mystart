@@ -361,4 +361,6 @@ add_action('after_setup_theme', 'mystart_content_width', 0);
 /* -------------------------------------------
  *  10 - CUSTOMIZER
  * ------------------------------------------- */
-load_template(THEMEROOT . '/includes/customizer.php');
+//require THEMEROOT . '/includes/customizer.php';
+load_template( get_template_directory() . '/includes/customizer.php' );
+load_template( get_template_directory() . '/includes/controls/select/post-dropdown-custom-control.php' );

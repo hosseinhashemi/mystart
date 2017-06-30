@@ -52,8 +52,8 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
 
 
     <div class="section__header">
-        <h2 class="section__title">Services</h2>
-        <p class="section__description">View Our services</p>
+        <h2 class="section__title"><?php echo  get_theme_mod('mystart_main_services_title'); ?></h2>
+        <p class="section__description"><?php echo get_theme_mod('mystart_services_sub_title'); ?></p>
     </div>
 
 
@@ -69,15 +69,16 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
                     <div class="service">
 
                         <div class="service__icon-holder">
-                            <i class="icon glyphicon glyphicon-phone"></i>
+                            <?php
+                            $icon = get_theme_mod('mystart_services_item_icon_1');
+                            $pre_icon = explode("-",$icon);
+                            ?>
+                            <i class="icon <?php echo  $pre_icon[0]. ' ' . $icon  ?> "></i>
                         </div>
 
-                        <h4 class="service__heading">Responsive</h4>
+                        <h4 class="service__heading"><?php echo  get_theme_mod('mystart_services_item_title_1'); ?></h4>
                         <p class="service__description">                             
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-
+                            <?php echo  get_theme_mod('mystart_services_item_desc_1'); ?>
                         </p>
 
                     </div>
@@ -90,14 +91,16 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
                     <div class="service">
 
                         <div class="service__icon-holder">
-                            <i class="icon glyphicon glyphicon-phone"></i>
+                            <?php
+                            $icon = get_theme_mod('mystart_services_item_icon_2');
+                            $pre_icon = explode("-",$icon);
+                            ?>
+                            <i class="icon <?php echo $pre_icon[0] . ' ' . $icon  ?> "></i>
                         </div>
 
-                        <h4 class="service__heading">Responsive</h4>
+                        <h4 class="service__heading"><?php echo  get_theme_mod('mystart_services_item_title_2'); ?></h4>
                         <p class="service__description">                             
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            <?php echo  get_theme_mod('mystart_services_item_desc_2'); ?>
                         </p>
 
                     </div>
@@ -110,14 +113,16 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
                     <div class="service">
 
                         <div class="service__icon-holder">
-                            <i class="icon glyphicon glyphicon-phone"></i>
+                            <?php
+                            $icon = get_theme_mod('mystart_services_item_icon_3');
+                            $pre_icon = explode("-",$icon);
+                            ?>
+                            <i class="icon <?php echo $pre_icon[0] . ' ' . $icon  ?> "></i>
                         </div>
 
-                        <h4 class="service__heading">Responsive</h4>
+                        <h4 class="service__heading"><?php echo  get_theme_mod('mystart_services_item_title_3'); ?></h4>
                         <p class="service__description">                             
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            <?php echo  get_theme_mod('mystart_services_item_desc_3'); ?>
                         </p>
 
                     </div>
