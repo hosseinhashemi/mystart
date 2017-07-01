@@ -149,17 +149,28 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
 
 
 <?php
-$about_us_background = 'style="background-image: url(' . IMAGES . '/about-us-bg.jpg' . ');background-size:cover;"';
+$about_us_default_bg =  IMAGES . '/about-us-bg.jpg' ;
+
+$mystart_about_bg = get_theme_mod('mystart_about_bg',$about_us_default_bg);
+$about_us_bg = 'style="background-image: url(' . $mystart_about_bg .');background-size:cover;"';
+
+
+$about_us_title= get_theme_mod('mystart_main_about_title','ABOUT US');
+$about_us_subtitle = get_theme_mod('mystart_about_sub_title','Read More About Our Company');
+$about_us_img = get_theme_mod('mystart_about_img',IMAGES . '/dummy-1.jpg');
+
+$about_us_desc = get_theme_mod('mystart_about_desc','Lorem ipsum dolor sit');
+$mystart_about_bg_color = get_theme_mod('mystart_about_bg_color','rgb(36, 3, 67)');
 ?>
 <!--  About Us -->
-<section id="about-us" class="section" <?php echo $about_us_background; ?> >
-    <div class="about-us__overlay"></div>
+<section id="about-us" class="section" <?php echo $about_us_bg; ?> >
+    <div class="about-us__overlay" style="background-color: <?php echo $mystart_about_bg_color ?>;opacity:0.6"></div>
 
     <div class="about-us__holder">
 
         <div class="section__header">
-            <h2 class="section__title">About <span>TERAFORM</span></h2>
-            <p class="section__description">Read more about our company</p>
+            <h2 class="section__title"><span><?php echo $about_us_title; ?></span></h2>
+            <p class="section__description"><?php echo $about_us_subtitle; ?></p>
         </div>
         <!--/section__header-->
 
@@ -169,21 +180,13 @@ $about_us_background = 'style="background-image: url(' . IMAGES . '/about-us-bg.
                 <div class="col-md-10 col-md-offset-1">
                     <div class="col-md-6">
                         <div class="about-us__img">
-                            <img src="<?php echo IMAGES . '/dummy-1.jpg' ?>" class="img-responsive"/>
+                            <img src="<?php echo $about_us_img; ?>" class="img-responsive"/>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="about-us__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <?php echo $about_us_desc; ?>
 
                         </div>
                     </div>
