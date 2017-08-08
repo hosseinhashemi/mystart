@@ -52,7 +52,7 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
 
 
     <div class="section__header">
-        <h2 class="section__title"><?php echo  get_theme_mod('mystart_main_services_title'); ?></h2>
+        <h2 class="section__title"><?php echo get_theme_mod('mystart_main_services_title'); ?></h2>
         <p class="section__description"><?php echo get_theme_mod('mystart_services_sub_title'); ?></p>
     </div>
 
@@ -71,14 +71,14 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
                         <div class="service__icon-holder">
                             <?php
                             $icon = get_theme_mod('mystart_services_item_icon_1');
-                            $pre_icon = explode("-",$icon);
+                            $pre_icon = explode("-", $icon);
                             ?>
-                            <i class="icon <?php echo  $pre_icon[0]. ' ' . $icon  ?> "></i>
+                            <i class="icon <?php echo $pre_icon[0] . ' ' . $icon ?> "></i>
                         </div>
 
-                        <h4 class="service__heading"><?php echo  get_theme_mod('mystart_services_item_title_1'); ?></h4>
+                        <h4 class="service__heading"><?php echo get_theme_mod('mystart_services_item_title_1'); ?></h4>
                         <p class="service__description">                             
-                            <?php echo  get_theme_mod('mystart_services_item_desc_1'); ?>
+                            <?php echo get_theme_mod('mystart_services_item_desc_1'); ?>
                         </p>
 
                     </div>
@@ -93,14 +93,14 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
                         <div class="service__icon-holder">
                             <?php
                             $icon = get_theme_mod('mystart_services_item_icon_2');
-                            $pre_icon = explode("-",$icon);
+                            $pre_icon = explode("-", $icon);
                             ?>
-                            <i class="icon <?php echo $pre_icon[0] . ' ' . $icon  ?> "></i>
+                            <i class="icon <?php echo $pre_icon[0] . ' ' . $icon ?> "></i>
                         </div>
 
-                        <h4 class="service__heading"><?php echo  get_theme_mod('mystart_services_item_title_2'); ?></h4>
+                        <h4 class="service__heading"><?php echo get_theme_mod('mystart_services_item_title_2'); ?></h4>
                         <p class="service__description">                             
-                            <?php echo  get_theme_mod('mystart_services_item_desc_2'); ?>
+                            <?php echo get_theme_mod('mystart_services_item_desc_2'); ?>
                         </p>
 
                     </div>
@@ -115,14 +115,14 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
                         <div class="service__icon-holder">
                             <?php
                             $icon = get_theme_mod('mystart_services_item_icon_3');
-                            $pre_icon = explode("-",$icon);
+                            $pre_icon = explode("-", $icon);
                             ?>
-                            <i class="icon <?php echo $pre_icon[0] . ' ' . $icon  ?> "></i>
+                            <i class="icon <?php echo $pre_icon[0] . ' ' . $icon ?> "></i>
                         </div>
 
-                        <h4 class="service__heading"><?php echo  get_theme_mod('mystart_services_item_title_3'); ?></h4>
+                        <h4 class="service__heading"><?php echo get_theme_mod('mystart_services_item_title_3'); ?></h4>
                         <p class="service__description">                             
-                            <?php echo  get_theme_mod('mystart_services_item_desc_3'); ?>
+                            <?php echo get_theme_mod('mystart_services_item_desc_3'); ?>
                         </p>
 
                     </div>
@@ -149,18 +149,18 @@ $intro_background_3 = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' 
 
 
 <?php
-$about_us_default_bg =  IMAGES . '/about-us-bg.jpg' ;
+$about_us_default_bg = IMAGES . '/about-us-bg.jpg';
 
-$mystart_about_bg = get_theme_mod('mystart_about_bg',$about_us_default_bg);
-$about_us_bg = 'style="background-image: url(' . $mystart_about_bg .');background-size:cover;"';
+$mystart_about_bg = get_theme_mod('mystart_about_bg', $about_us_default_bg);
+$about_us_bg = 'style="background-image: url(' . $mystart_about_bg . ');background-size:cover;"';
 
 
-$about_us_title= get_theme_mod('mystart_main_about_title','ABOUT US');
-$about_us_subtitle = get_theme_mod('mystart_about_sub_title','Read More About Our Company');
-$about_us_img = get_theme_mod('mystart_about_img',IMAGES . '/dummy-1.jpg');
+$about_us_title = get_theme_mod('mystart_main_about_title', 'ABOUT US');
+$about_us_subtitle = get_theme_mod('mystart_about_sub_title', 'Read More About Our Company');
+$about_us_img = get_theme_mod('mystart_about_img', IMAGES . '/dummy-1.jpg');
 
-$about_us_desc = get_theme_mod('mystart_about_desc','Lorem ipsum dolor sit');
-$mystart_about_bg_color = get_theme_mod('mystart_about_bg_color','rgb(36, 3, 67)');
+$about_us_desc = get_theme_mod('mystart_about_desc', 'Lorem ipsum dolor sit');
+$mystart_about_bg_color = get_theme_mod('mystart_about_bg_color', 'rgb(36, 3, 67)');
 ?>
 <!--  About Us -->
 <section id="about-us" class="section" <?php echo $about_us_bg; ?> >
@@ -247,89 +247,74 @@ $mystart_about_bg_color = get_theme_mod('mystart_about_bg_color','rgb(36, 3, 67)
 
 <!-- Blog Section-->
 <section id="blog" class="section">             
-
+    <?php
+    $mystart_main_blog_title = get_theme_mod('mystart_main_blog_title', 'LATEST POSTS');
+    $mystart_blog_sub_title = get_theme_mod('mystart_blog_sub_title', 'Read More About Our Company');
+    $mystart_blog_item_count = get_theme_mod('mystart_blog_item_count', 3);
+    $mystart_blog_btn_text = get_theme_mod('mystart_blog_btn_text', "VIEW ALL");
+    $mystart_blog_btn_url = get_theme_mod('mystart_blog_btn_url', "#");
+    ?>
 
     <div class="section__header">
-        <h2 class="section__title">Latest Posts</h2>
-        <p class="section__description">Read more about our company</p>
+        <h2 class="section__title"><?php echo $mystart_main_blog_title; ?></h2>
+        <p class="section__description"><?php echo $mystart_blog_sub_title; ?></p>
     </div>
-    <div class="container-fluid">
+    <div class="container">
 
 
 
         <div class="row">
 
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-12 masonry-blog-grid" >
 
 
-                <div class="col-md-4">
-                    <div class="post-item">
 
-                        <div class="post-item__image">
-                            <a href="#">
-                                <img src="<?php echo IMAGES; ?>/dummy-1.jpg" class="img-responsive" alt="some alt" />
-                            </a>
+<?php
+$args = array(
+    'posts_per_page' => $mystart_blog_item_count,
+);
+
+$the_query = new WP_Query($args);
+
+if ($the_query->have_posts()):
+
+    while ($the_query->have_posts()) : $the_query->the_post();
+
+        $image_medium_blog = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+        ?>
+
+                        <div class="col-md-4 post-item-selector grid-sizer">
+                            <div class="post-item">
+
+                                <div class="post-item__image">
+                                    <a href="<?php echo get_the_permalink(); ?>">
+                                        <img src="<?php echo $image_medium_blog[0]; ?>" class="img-responsive" alt="<?php echo get_the_title(); ?>" />
+                                    </a>
+                                </div>
+
+                                <div class="post-item__text">
+
+                                    <h5 class="post-item__title"><a href="#"><?php echo get_the_title(); ?></a></h5>
+                                    <p class="post-item__expert">
+        <?php echo get_the_excerpt(); ?>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <!--/post-item-->
                         </div>
 
-                        <div class="post-item__text">
 
-                            <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
-                            <p class="post-item__expert">
-                                VICE meets up with Joe Nickell, a longtime paranormal investigator
-                                who’s been called the real-life Scully. We travel with him to Roswell,
-                                NM on the called the real-life Scully
-                            </p>
-                        </div>
+        <?php
+    endwhile;
 
-                    </div>
-                    <!--/post-item-->
-                </div>
+endif;
+?>
 
-                <div class="col-md-4">
-                    <div class="post-item">
 
-                        <div class="post-item__image">
-                            <a href="#">
-                                <img src="<?php echo IMAGES; ?>/dummy-2.jpg" class="img-responsive" alt="some alt" />
-                            </a>
-                        </div>
 
-                        <div class="post-item__text">
 
-                            <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
-                            <p class="post-item__expert">
-                                VICE meets up with Joe Nickell, a longtime paranormal investigator
-                                who’s been called the real-life Scully. We travel with him to Roswell,
-                                NM on the called the real-life Scully
-                            </p>
-                        </div>
 
-                    </div>
-                    <!--/post-item-->
-                </div>
-
-                <div class="col-md-4">
-                    <div class="post-item">
-
-                        <div class="post-item__image">
-                            <a href="#">
-                                <img src="<?php echo IMAGES; ?>/dummy-1.jpg" class="img-responsive" alt="some alt" />
-                            </a>
-                        </div>
-
-                        <div class="post-item__text">
-
-                            <h5 class="post-item__title"><a href="#">BEST PRODUCTIVITY SECRETS</a></h5>
-                            <p class="post-item__expert">
-                                VICE meets up with Joe Nickell, a longtime paranormal investigator
-                                who’s been called the real-life Scully. We travel with him to Roswell,
-                                NM on the called the real-life Scully
-                            </p>
-                        </div>
-
-                    </div>
-                    <!--/post-item-->
-                </div>
 
 
 
@@ -343,7 +328,7 @@ $mystart_about_bg_color = get_theme_mod('mystart_about_bg_color','rgb(36, 3, 67)
         <!--/row-->
 
         <div class="section__bottom">
-            <a href="#" class="hvr-sweep-to-right action-btn">View All Posts</a>
+            <a href="<?php echo $mystart_blog_btn_url; ?>" class="hvr-sweep-to-right action-btn"><?php echo $mystart_blog_btn_text; ?></a>
         </div>
 
     </div>

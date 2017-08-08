@@ -46,12 +46,12 @@ function mystart_customize_register($wp_customize) {
     /* ================/
      *  Latest Post
     /  ================*/
-    $wp_customize->add_section('mystart_about_options', array(
-        'title' => __('About Us', 'mystart'),
+    $wp_customize->add_section('mystart_blog_options', array(
+        'title' => __('Latest Posts', 'mystart'),
         'priority' => 30,
         'panel' => 'mystart_main_options'
     ));
-    require_once( get_template_directory() . '/includes/customize-section/customize-about.php' );
+    require_once( get_template_directory() . '/includes/customize-section/customize-blog.php' );
 
 
 }

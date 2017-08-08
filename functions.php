@@ -250,6 +250,7 @@ if (!function_exists('mystart_scripts')) {
         wp_register_script('jquery-easing', JS . '/jquery.easing.1-4-1.min.js', array('jquery'), false, false, true);
         wp_register_script('swiper-jquery', JS . '/swiper.jquery.min.js', array('jquery'), false, false, true);
         wp_register_script('percircle', JS . '/percircle.min.js', array('jquery'), false, false, true);
+        wp_register_script('masonry-v4', JS . '/masonry.pkgd.min.js', false, false, false);
         wp_register_script('main-js', JS . '/main.js', false, false, true);
 
 
@@ -259,6 +260,7 @@ if (!function_exists('mystart_scripts')) {
         wp_enqueue_script('slim-menu');
         wp_enqueue_script('swiper-jquery');
         wp_enqueue_script('percircle');
+        wp_enqueue_script('masonry-v4');
         wp_enqueue_script('main-js');
 
         if (is_singular())
