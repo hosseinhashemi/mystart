@@ -449,6 +449,205 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
 
 
 
+
+
+<!-- Our Team Section-->
+<section id="ourteam" class="section">             
+
+
+    <div class="section__header">
+        <h2 class="section__title">OUR TEAM</h2>
+        <p class="section__description">Read more about our MEMBERS</p>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="tp-team-item ">
+
+                    
+                    <div class="tp-team-item__img">
+                        <img src="<?php echo IMAGES."/team-member.jpg" ?>" />
+                    </div>
+                    
+                    <div class="tp-team-item__overlay">
+                        
+                        <div class="tp-team-item__name">Alen Dowan</div>
+                        <div class="tp-team-item__pos">Developer</div>
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="tp-team-item ">
+
+                    
+                    <div class="tp-team-item__img">
+                        <img src="<?php echo IMAGES."/team-member.jpg" ?>" />
+                    </div>
+                    
+                    <div class="tp-team-item__overlay">
+                        
+                        <div class="tp-team-item__name">Alen Dowan</div>
+                        <div class="tp-team-item__pos">Developer</div>
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="tp-team-item ">
+
+                    
+                    <div class="tp-team-item__img">
+                        <img src="<?php echo IMAGES."/team-member.jpg" ?>" />
+                    </div>
+                    
+                    <div class="tp-team-item__overlay">
+                        
+                        <div class="tp-team-item__name">Alen Dowan</div>
+                        <div class="tp-team-item__pos">Developer</div>
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            <div class="col-md-3">
+                <div class="tp-team-item ">
+
+                    
+                    <div class="tp-team-item__img">
+                        <img src="<?php echo IMAGES."/team-member.jpg" ?>" />
+                    </div>
+                    
+                    <div class="tp-team-item__overlay">
+                        
+                        <div class="tp-team-item__name">Alen Dowan</div>
+                        <div class="tp-team-item__pos">Developer</div>
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- /row-->
+    </div>
+    <!--/ container-->
+
+</section>
+<!-- / Our Team Section-->
+
+
+
+<!-- Our Clients-->
+<section id="ourclient" class="section">             
+
+
+    <div class="section__header">
+        <h2 class="section__title">OUR Client</h2>
+        <p class="section__description">Read more about our client</p>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-2">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="#">
+                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-01.png"; ?>" />
+                    </a>
+
+                </div>
+            </div>
+            <!--col-md-2-->
+            
+            
+            <div class="col-md-2">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="#">
+                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-02.png"; ?>" />
+                    </a>
+
+                </div>
+            </div>
+            <!--col-md-2-->
+            
+            
+            <div class="col-md-2">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="#">
+                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-03.png"; ?>" />
+                    </a>
+
+                </div>
+            </div>
+            <!--col-md-2-->
+            
+            
+            <div class="col-md-2">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="#">
+                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-04.png"; ?>" />
+                    </a>
+
+                </div>
+            </div>
+            <!--col-md-2-->
+            
+            
+            <div class="col-md-2">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="#">
+                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-05.png"; ?>" />
+                    </a>
+
+                </div>
+            </div>
+            <!--col-md-2-->
+            
+            
+            
+            <div class="col-md-2">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="#">
+                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-06.png"; ?>" />
+                    </a>
+
+                </div>
+            </div>
+            <!--col-md-2-->
+
+
+
+
+        </div>
+        <!-- /row-->
+    </div>
+    <!--/ container-->
+
+</section>
+<!-- / Our Client Section-->
+
+
+
+
 <?php
 /* Load footer.php  */
 get_footer();
