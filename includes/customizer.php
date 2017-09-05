@@ -52,6 +52,19 @@ function mystart_customize_register($wp_customize) {
         'panel' => 'mystart_main_options'
     ));
     require_once( get_template_directory() . '/includes/customize-section/customize-blog.php' );
+    
+    
+    
+    
+    /* ================/
+     *  Testimonials
+    /  ================*/
+    $wp_customize->add_section('mystart_testimonial_options', array(
+        'title' => __('Testimonials', 'mystart'),
+        'priority' => 30,
+        'panel' => 'mystart_main_options'
+    ));
+    require_once( get_template_directory() . '/includes/customize-section/customize-testimonials.php' );
 
 
 }

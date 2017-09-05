@@ -38,7 +38,7 @@ $wp_customize->add_setting('mystart_blog_item_count', array(
 );
 $wp_customize->add_control(
         'mystart_blog_item_count', array(
-    'label' => __('How Many Post should be show?', 'mytheme'),
+    'label' => __('How Many Post should be show?', 'mystart'),
     'section' => 'mystart_blog_options',
     'settings' => 'mystart_blog_item_count',
     'type' => 'number'

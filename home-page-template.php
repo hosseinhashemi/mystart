@@ -269,19 +269,19 @@ $mystart_about_bg_color = get_theme_mod('mystart_about_bg_color', 'rgb(36, 3, 67
 
 
 
-<?php
-$args = array(
-    'posts_per_page' => $mystart_blog_item_count,
-);
+                <?php
+                $args = array(
+                    'posts_per_page' => $mystart_blog_item_count,
+                );
 
-$the_query = new WP_Query($args);
+                $the_query = new WP_Query($args);
 
-if ($the_query->have_posts()):
+                if ($the_query->have_posts()):
 
-    while ($the_query->have_posts()) : $the_query->the_post();
+                    while ($the_query->have_posts()) : $the_query->the_post();
 
-        $image_medium_blog = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
-        ?>
+                        $image_medium_blog = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+                        ?>
 
                         <div class="col-md-4 post-item-selector grid-sizer">
                             <div class="post-item">
@@ -296,7 +296,7 @@ if ($the_query->have_posts()):
 
                                     <h5 class="post-item__title"><a href="#"><?php echo get_the_title(); ?></a></h5>
                                     <p class="post-item__expert">
-        <?php echo get_the_excerpt(); ?>
+                                        <?php echo get_the_excerpt(); ?>
                                     </p>
                                 </div>
 
@@ -305,11 +305,11 @@ if ($the_query->have_posts()):
                         </div>
 
 
-        <?php
-    endwhile;
+                        <?php
+                    endwhile;
 
-endif;
-?>
+                endif;
+                ?>
 
 
 
@@ -339,13 +339,36 @@ endif;
 
 
 
+
+
+<?php
+$mystart_main_testimonial_title = get_theme_mod('mystart_main_testimonial_title', 'TESTIMONIALS');
+$mystart_testimonial_sub_title  = get_theme_mod('mystart_testimonial_sub_title', 'What People Say About Us?');
+
+$mystart_testimonial_item_name_1 = get_theme_mod('mystart_testimonial_item_name_1', 'Customer 1');
+$mystart_testimonial_item_name_2 = get_theme_mod('mystart_testimonial_item_name_2', 'Customer 2');
+$mystart_testimonial_item_name_3 = get_theme_mod('mystart_testimonial_item_name_3', 'Customer 3');
+
+$mystart_testimonial_item_pos_1 = get_theme_mod('mystart_testimonial_item_pos_1',"CEO");
+$mystart_testimonial_item_pos_2 = get_theme_mod('mystart_testimonial_item_pos_2',"Developer");
+$mystart_testimonial_item_pos_3 = get_theme_mod('mystart_testimonial_item_pos_3',"Designer");
+
+$mystart_testimonial_item_comment_1 = get_theme_mod('mystart_testimonial_item_comment_1',"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+$mystart_testimonial_item_comment_2 = get_theme_mod('mystart_testimonial_item_comment_2',"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+$mystart_testimonial_item_comment_3 = get_theme_mod('mystart_testimonial_item_comment_3',"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+
+$mystart_testimonial_item_avatar_1 = get_theme_mod('mystart_testimonial_item_avatar_1', IMAGES."/dummy-3.jpg");
+$mystart_testimonial_item_avatar_2 = get_theme_mod('mystart_testimonial_item_avatar_2', IMAGES."/dummy-3.jpg");
+$mystart_testimonial_item_avatar_3 = get_theme_mod('mystart_testimonial_item_avatar_3', IMAGES."/dummy-3.jpg");
+?>
+
 <!-- Testimonials Section-->
 <section id="testimonials" class="section">             
 
 
     <div class="section__header">
-        <h2 class="section__title">Testimonials</h2>
-        <p class="section__description">Read more about our company</p>
+        <h2 class="section__title"><?php echo $mystart_main_testimonial_title ?></h2>
+        <p class="section__description"><?php echo $mystart_testimonial_sub_title ?></p>
     </div>
 
 
@@ -353,68 +376,49 @@ endif;
 
         <div class="row">
 
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <div class="testimonial-item ">
 
-                    <p class="testimonial-item__text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat.
-                    </p>
-                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo IMAGES; ?>/dummy-3.jpg" />
+                    <p class="testimonial-item__text"><?php echo $mystart_testimonial_item_comment_1; ?></p>
+                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_1; ?>" />
                     <div class="testimonial-item__person">
-                        <h6 class="testimonial-item__title">Sarah Cameron</h6>
-                        <h6 class="testimonial-item__pos">From BardiaWeb</h6>
+                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_1 ; ?></h6>
+                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_1; ?></h6>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            <div class="col-sm-4">
+                <div class="testimonial-item ">
+
+                    <p class="testimonial-item__text"><?php echo $mystart_testimonial_item_comment_2; ?></p>
+                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_2; ?>" />
+                    <div class="testimonial-item__person">
+                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_2 ; ?></h6>
+                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_2; ?></h6>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            <div class="col-sm-4">
+                <div class="testimonial-item ">
+
+                    <p class="testimonial-item__text"><?php echo $mystart_testimonial_item_comment_3; ?></p>
+                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_3; ?>" />
+                    <div class="testimonial-item__person">
+                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_3 ; ?></h6>
+                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_3; ?></h6>
                     </div>
 
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="testimonial-item ">
+            
 
-                    <p class="testimonial-item__text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat.
-                    </p>
-                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo IMAGES; ?>/dummy-4.jpg" />
-                    <div class="testimonial-item__person">
-                        <h6 class="testimonial-item__title">Hossein Hashemi</h6>
-                        <h6 class="testimonial-item__pos">From BardiaWeb</h6>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="testimonial-item ">
-
-                    <p class="testimonial-item__text">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat.
-                    </p>
-                    <img class="testimonial-item__img img-responsive img-circle" src="<?php echo IMAGES; ?>/dummy-3.jpg" />
-                    <div class="testimonial-item__person">
-                        <h6 class="testimonial-item__title">Kim Solon</h6>
-                        <h6 class="testimonial-item__pos">From BardiaWeb</h6>
-                    </div>
-
-                </div>
-            </div>
 
         </div>
         <!-- /row-->
@@ -465,78 +469,78 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
 
         <div class="row">
 
-            <div class="col-md-3">
+            <div class="col-sm-3">
                 <div class="tp-team-item ">
 
-                    
+
                     <div class="tp-team-item__img">
-                        <img src="<?php echo IMAGES."/team-member.jpg" ?>" />
+                        <img src="<?php echo IMAGES . "/team-member.jpg" ?>" />
                     </div>
-                    
+
                     <div class="tp-team-item__overlay">
-                        
+
                         <div class="tp-team-item__name">Alen Dowan</div>
                         <div class="tp-team-item__pos">Developer</div>
-                        
-                        
+
+
                     </div>
 
                 </div>
             </div>
-            
-            <div class="col-md-3">
+
+            <div class="col-sm-3">
                 <div class="tp-team-item ">
 
-                    
+
                     <div class="tp-team-item__img">
-                        <img src="<?php echo IMAGES."/team-member.jpg" ?>" />
+                        <img src="<?php echo IMAGES . "/team-member.jpg" ?>" />
                     </div>
-                    
+
                     <div class="tp-team-item__overlay">
-                        
+
                         <div class="tp-team-item__name">Alen Dowan</div>
                         <div class="tp-team-item__pos">Developer</div>
-                        
-                        
+
+
                     </div>
 
                 </div>
             </div>
-            
-            <div class="col-md-3">
+
+            <div class="col-sm-3">
                 <div class="tp-team-item ">
 
-                    
+
                     <div class="tp-team-item__img">
-                        <img src="<?php echo IMAGES."/team-member.jpg" ?>" />
+                        <img src="<?php echo IMAGES . "/team-member.jpg" ?>" />
                     </div>
-                    
+
                     <div class="tp-team-item__overlay">
-                        
+
                         <div class="tp-team-item__name">Alen Dowan</div>
                         <div class="tp-team-item__pos">Developer</div>
-                        
-                        
+
+
                     </div>
 
                 </div>
             </div>
-            
-            
-            <div class="col-md-3">
+
+
+            <div class="col-sm-3">
                 <div class="tp-team-item ">
 
-                    
+
                     <div class="tp-team-item__img">
-                        <img src="<?php echo IMAGES."/team-member.jpg" ?>" />
+                        <img src="<?php echo IMAGES . "/team-member.jpg" ?>" />
                     </div>
-                    
+
                     <div class="tp-team-item__overlay">
-                        
+
                         <div class="tp-team-item__name">Alen Dowan</div>
                         <div class="tp-team-item__pos">Developer</div>
-                        
-                        
+
+
                     </div>
 
                 </div>
@@ -577,8 +581,8 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
                 </div>
             </div>
             <!--col-md-2-->
-            
-            
+
+
             <div class="col-md-2">
                 <div class="tp-client">
                     <a class="tp-client__link" href="#">
@@ -588,8 +592,8 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
                 </div>
             </div>
             <!--col-md-2-->
-            
-            
+
+
             <div class="col-md-2">
                 <div class="tp-client">
                     <a class="tp-client__link" href="#">
@@ -599,8 +603,8 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
                 </div>
             </div>
             <!--col-md-2-->
-            
-            
+
+
             <div class="col-md-2">
                 <div class="tp-client">
                     <a class="tp-client__link" href="#">
@@ -610,8 +614,8 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
                 </div>
             </div>
             <!--col-md-2-->
-            
-            
+
+
             <div class="col-md-2">
                 <div class="tp-client">
                     <a class="tp-client__link" href="#">
@@ -621,9 +625,9 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
                 </div>
             </div>
             <!--col-md-2-->
-            
-            
-            
+
+
+
             <div class="col-md-2">
                 <div class="tp-client">
                     <a class="tp-client__link" href="#">
