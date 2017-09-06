@@ -65,6 +65,24 @@ function mystart_customize_register($wp_customize) {
         'panel' => 'mystart_main_options'
     ));
     require_once( get_template_directory() . '/includes/customize-section/customize-testimonials.php' );
+    
+    
+    
+    
+    
+    /* ================/
+     *  Our Team
+    /  ================*/
+    $wp_customize->add_section('mystart_team_options', array(
+        'title' => __('Our Team', 'mystart'),
+        'priority' => 30,
+        'panel' => 'mystart_main_options'
+    ));
+    require_once( get_template_directory() . '/includes/customize-section/customize-team.php' );
+    
+    
+    
+    
 
 
 }

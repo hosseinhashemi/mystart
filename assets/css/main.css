@@ -1081,7 +1081,7 @@ ul.slimmenu li a:focus::after {
 
 /* Testimonial */
 #testimonials{
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     background-color: #f4f7f6;
 }
 .testimonial-item{
@@ -1105,7 +1105,7 @@ ul.slimmenu li a:focus::after {
     left: 0;
     z-index: -1;
     background: rgba(255,255,255,0.9);
-    
+
 }
 .testimonial-item__img{
     width: 70px;
@@ -1135,7 +1135,7 @@ ul.slimmenu li a:focus::after {
 .call-to-action{
     text-align: center;
     background-size: cover;
-    padding: 200px 100px;
+    padding: 200px 0px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1171,10 +1171,12 @@ ul.slimmenu li a:focus::after {
     position: relative;
     width: 100%;
     overflow: hidden;
+    backface-visibility: hidden;
 }
 .tp-team-item__img img{
     width: 100%;
     height: auto;
+    backface-visibility: hidden;
 }
 .tp-team-item__overlay{
     position: absolute;
@@ -1183,23 +1185,28 @@ ul.slimmenu li a:focus::after {
     top:0;
     left:0;
     text-align: center;
-    padding: 3em;
+    padding: 3em 0;
     background-color: rgba(0,0,0,0.4);
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s;
+    backface-visibility: hidden;
 }
 .tp-team-item__name{
-    padding: 30% 0 10px 0;
+    padding: 20px 0 10px 0;
     color:#fff;
-    transition: opacity 0.55s, transform 0.35s;
+    transition: opacity 0.55s, transform 0.25s linear;
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    backface-visibility: hidden;
 }
 .tp-team-item__pos{
     padding: 0px 20px;
     color:#fff;
-    transition: opacity 0.55s, transform 0.35s;
-    transform: scale(1.3);
-    
+    transition: opacity 0.55s, transform 0.25s linear;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    backface-visibility: hidden;
+
 }
 .tp-team-item:hover .tp-team-item__overlay{
     opacity: 1;
@@ -1207,11 +1214,20 @@ ul.slimmenu li a:focus::after {
 .tp-team-item:hover .tp-team-item__name{
     opacity: 1;
     transform: scale(1);
+    -webkit-transform: scale(1);
 }
 .tp-team-item:hover .tp-team-item__pos{
     opacity: 1;
     transform: scale(1);
+    -webkit-transform: scale(1);
 }
+
+
+#tp-client{
+    padding: 100px 0;
+}
+
+
 
 
 /*

@@ -343,23 +343,23 @@ $mystart_about_bg_color = get_theme_mod('mystart_about_bg_color', 'rgb(36, 3, 67
 
 <?php
 $mystart_main_testimonial_title = get_theme_mod('mystart_main_testimonial_title', 'TESTIMONIALS');
-$mystart_testimonial_sub_title  = get_theme_mod('mystart_testimonial_sub_title', 'What People Say About Us?');
+$mystart_testimonial_sub_title = get_theme_mod('mystart_testimonial_sub_title', 'What People Say About Us?');
 
 $mystart_testimonial_item_name_1 = get_theme_mod('mystart_testimonial_item_name_1', 'Customer 1');
 $mystart_testimonial_item_name_2 = get_theme_mod('mystart_testimonial_item_name_2', 'Customer 2');
 $mystart_testimonial_item_name_3 = get_theme_mod('mystart_testimonial_item_name_3', 'Customer 3');
 
-$mystart_testimonial_item_pos_1 = get_theme_mod('mystart_testimonial_item_pos_1',"CEO");
-$mystart_testimonial_item_pos_2 = get_theme_mod('mystart_testimonial_item_pos_2',"Developer");
-$mystart_testimonial_item_pos_3 = get_theme_mod('mystart_testimonial_item_pos_3',"Designer");
+$mystart_testimonial_item_pos_1 = get_theme_mod('mystart_testimonial_item_pos_1', "CEO");
+$mystart_testimonial_item_pos_2 = get_theme_mod('mystart_testimonial_item_pos_2', "Developer");
+$mystart_testimonial_item_pos_3 = get_theme_mod('mystart_testimonial_item_pos_3', "Designer");
 
-$mystart_testimonial_item_comment_1 = get_theme_mod('mystart_testimonial_item_comment_1',"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-$mystart_testimonial_item_comment_2 = get_theme_mod('mystart_testimonial_item_comment_2',"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-$mystart_testimonial_item_comment_3 = get_theme_mod('mystart_testimonial_item_comment_3',"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+$mystart_testimonial_item_comment_1 = get_theme_mod('mystart_testimonial_item_comment_1', "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+$mystart_testimonial_item_comment_2 = get_theme_mod('mystart_testimonial_item_comment_2', "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+$mystart_testimonial_item_comment_3 = get_theme_mod('mystart_testimonial_item_comment_3', "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
 
-$mystart_testimonial_item_avatar_1 = get_theme_mod('mystart_testimonial_item_avatar_1', IMAGES."/dummy-3.jpg");
-$mystart_testimonial_item_avatar_2 = get_theme_mod('mystart_testimonial_item_avatar_2', IMAGES."/dummy-3.jpg");
-$mystart_testimonial_item_avatar_3 = get_theme_mod('mystart_testimonial_item_avatar_3', IMAGES."/dummy-3.jpg");
+$mystart_testimonial_item_avatar_1 = get_theme_mod('mystart_testimonial_item_avatar_1', IMAGES . "/dummy-3.jpg");
+$mystart_testimonial_item_avatar_2 = get_theme_mod('mystart_testimonial_item_avatar_2', IMAGES . "/dummy-3.jpg");
+$mystart_testimonial_item_avatar_3 = get_theme_mod('mystart_testimonial_item_avatar_3', IMAGES . "/dummy-3.jpg");
 ?>
 
 <!-- Testimonials Section-->
@@ -382,42 +382,42 @@ $mystart_testimonial_item_avatar_3 = get_theme_mod('mystart_testimonial_item_ava
                     <p class="testimonial-item__text"><?php echo $mystart_testimonial_item_comment_1; ?></p>
                     <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_1; ?>" />
                     <div class="testimonial-item__person">
-                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_1 ; ?></h6>
+                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_1; ?></h6>
                         <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_1; ?></h6>
                     </div>
 
                 </div>
             </div>
-            
-            
+
+
             <div class="col-sm-4">
                 <div class="testimonial-item ">
 
                     <p class="testimonial-item__text"><?php echo $mystart_testimonial_item_comment_2; ?></p>
                     <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_2; ?>" />
                     <div class="testimonial-item__person">
-                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_2 ; ?></h6>
+                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_2; ?></h6>
                         <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_2; ?></h6>
                     </div>
 
                 </div>
             </div>
-            
-            
+
+
             <div class="col-sm-4">
                 <div class="testimonial-item ">
 
                     <p class="testimonial-item__text"><?php echo $mystart_testimonial_item_comment_3; ?></p>
                     <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_3; ?>" />
                     <div class="testimonial-item__person">
-                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_3 ; ?></h6>
+                        <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_3; ?></h6>
                         <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_3; ?></h6>
                     </div>
 
                 </div>
             </div>
 
-            
+
 
 
         </div>
@@ -437,13 +437,17 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
     <div class="call-to-action__overlay"></div>
 
     <div class="container">
+        <div class="row">
+            
+            <div class="call-to-action__title">We Make things better!</div>
+            <div class="call-to-action__description">
+                It's the best of themes in the world you have ever see
+            </div>
 
-        <div class="call-to-action__title">We Make things better!</div>
-        <div class="call-to-action__description">
-            It's the best of themes in the world you have ever see
         </div>
-
+        <!-- /row-->
     </div>
+    <!--/ container-->
 
 
 
@@ -455,13 +459,36 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
 
 
 
+
+
+
+
+<?php
+$mystart_main_team_title = get_theme_mod('mystart_main_team_title', 'OUR TEAM');
+$mystart_team_sub_title = get_theme_mod('mystart_team_sub_title', 'Read More About Our MEMBERS');
+
+$mystart_team_item_name_1 = get_theme_mod('mystart_team_item_name_1', 'Member 1');
+$mystart_team_item_name_2 = get_theme_mod('mystart_team_item_name_2', 'Member 2');
+$mystart_team_item_name_3 = get_theme_mod('mystart_team_item_name_3', 'Member 3');
+$mystart_team_item_name_4 = get_theme_mod('mystart_team_item_name_4', 'Member 4');
+
+$mystart_team_item_pos_1 = get_theme_mod('mystart_team_item_pos_1', "CEO");
+$mystart_team_item_pos_2 = get_theme_mod('mystart_team_item_pos_2', "Developer");
+$mystart_team_item_pos_3 = get_theme_mod('mystart_team_item_pos_3', "Designer");
+$mystart_team_item_pos_4 = get_theme_mod('mystart_team_item_pos_4', "Manager");
+
+$mystart_team_item_avatar_1 = get_theme_mod('mystart_team_item_avatar_1', IMAGES . "/team-member.jpg");
+$mystart_team_item_avatar_2 = get_theme_mod('mystart_team_item_avatar_2', IMAGES . "/team-member.jpg");
+$mystart_team_item_avatar_3 = get_theme_mod('mystart_team_item_avatar_3', IMAGES . "/team-member.jpg");
+$mystart_team_item_avatar_4 = get_theme_mod('mystart_team_item_avatar_4', IMAGES . "/team-member.jpg");
+?>
 <!-- Our Team Section-->
 <section id="ourteam" class="section">             
 
 
     <div class="section__header">
-        <h2 class="section__title">OUR TEAM</h2>
-        <p class="section__description">Read more about our MEMBERS</p>
+        <h2 class="section__title"><?php echo $mystart_main_team_title; ?></h2>
+        <p class="section__description"><?php echo $mystart_team_sub_title; ?></p>
     </div>
 
 
@@ -472,79 +499,78 @@ $call_to_action_background = 'style="background-image: url(' . IMAGES . '/home-b
             <div class="col-sm-3">
                 <div class="tp-team-item ">
 
-
                     <div class="tp-team-item__img">
-                        <img src="<?php echo IMAGES . "/team-member.jpg" ?>" />
+                        <img src="<?php echo $mystart_team_item_avatar_1; ?>" />
                     </div>
 
                     <div class="tp-team-item__overlay">
-
-                        <div class="tp-team-item__name">Alen Dowan</div>
-                        <div class="tp-team-item__pos">Developer</div>
-
-
+                        <div class="tp-team-item__name"><?php echo $mystart_team_item_name_1; ?></div>
+                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_pos_1; ?></div>
                     </div>
 
                 </div>
+                <!--/tp-team-item--> 
             </div>
+            <!--/col-sm-3-->
 
-            <div class="col-sm-3">
-                <div class="tp-team-item ">
-
-
-                    <div class="tp-team-item__img">
-                        <img src="<?php echo IMAGES . "/team-member.jpg" ?>" />
-                    </div>
-
-                    <div class="tp-team-item__overlay">
-
-                        <div class="tp-team-item__name">Alen Dowan</div>
-                        <div class="tp-team-item__pos">Developer</div>
-
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="tp-team-item ">
-
-
-                    <div class="tp-team-item__img">
-                        <img src="<?php echo IMAGES . "/team-member.jpg" ?>" />
-                    </div>
-
-                    <div class="tp-team-item__overlay">
-
-                        <div class="tp-team-item__name">Alen Dowan</div>
-                        <div class="tp-team-item__pos">Developer</div>
-
-
-                    </div>
-
-                </div>
-            </div>
 
 
             <div class="col-sm-3">
                 <div class="tp-team-item ">
 
-
                     <div class="tp-team-item__img">
-                        <img src="<?php echo IMAGES . "/team-member.jpg" ?>" />
+                        <img src="<?php echo $mystart_team_item_avatar_2; ?>" />
                     </div>
 
                     <div class="tp-team-item__overlay">
-
-                        <div class="tp-team-item__name">Alen Dowan</div>
-                        <div class="tp-team-item__pos">Developer</div>
-
-
+                        <div class="tp-team-item__name"><?php echo $mystart_team_item_name_2; ?></div>
+                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_pos_2; ?></div>
                     </div>
 
                 </div>
+                <!--/tp-team-item--> 
             </div>
+            <!--/col-sm-3-->
+
+
+
+            <div class="col-sm-3">
+                <div class="tp-team-item ">
+
+                    <div class="tp-team-item__img">
+                        <img src="<?php echo $mystart_team_item_avatar_3; ?>" />
+                    </div>
+
+                    <div class="tp-team-item__overlay">
+                        <div class="tp-team-item__name"><?php echo $mystart_team_item_name_3; ?></div>
+                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_pos_3; ?></div>
+                    </div>
+
+                </div>
+                <!--/tp-team-item--> 
+            </div>
+            <!--/col-sm-3-->
+
+
+
+            <div class="col-sm-3">
+                <div class="tp-team-item ">
+
+                    <div class="tp-team-item__img">
+                        <img src="<?php echo $mystart_team_item_avatar_4; ?>" />
+                    </div>
+
+                    <div class="tp-team-item__overlay">
+                        <div class="tp-team-item__name"><?php echo $mystart_team_item_name_4; ?></div>
+                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_pos_4; ?></div>
+                    </div>
+
+                </div>
+                <!--/tp-team-item--> 
+            </div>
+            <!--/col-sm-3-->
+
+
 
 
 
