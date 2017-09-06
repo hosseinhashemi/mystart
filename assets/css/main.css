@@ -520,7 +520,7 @@ Widgets area (sidebar)
     font-size: 25px;
 }
 /* calendar widget */
-.widget_calendar {float: left;}
+
 #wp-calendar {width: 100%; }
 #wp-calendar caption { text-align: right; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
 #wp-calendar thead { font-size: 10px; }
@@ -1041,11 +1041,7 @@ ul.slimmenu li a:focus::after {
 }
 
 
-.post-item-selector{
 
-    width: 32% !important;
-
-}
 .sizer-width{
     width:33%;
 }
@@ -1172,6 +1168,7 @@ ul.slimmenu li a:focus::after {
     width: 100%;
     overflow: hidden;
     backface-visibility: hidden;
+    margin-bottom: 40px;
 }
 .tp-team-item__img img{
     width: 100%;
@@ -1226,7 +1223,14 @@ ul.slimmenu li a:focus::after {
 #tp-client{
     padding: 100px 0;
 }
-
+.tp-client{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.tp-client__img{
+    max-width: 100%;
+    height: auto;
+}
 
 
 
@@ -1247,7 +1251,21 @@ Global Responsive styles
     .testimonial-item {
         margin-bottom: 30px;
     }
+    
 }
+
+.grid-sizer{
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+@media (min-width:768px){
+    .grid-sizer { width: 33.3%; }
+}
+
+
 
 
 

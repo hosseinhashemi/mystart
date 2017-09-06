@@ -79,6 +79,7 @@ jQuery(document).ready(function ($) {
         itemSelector: '.post-item-selector',
         columnWidth: '.grid-sizer',
         percentPosition: true
+//        horizontalOrder: true
     });
 
 });

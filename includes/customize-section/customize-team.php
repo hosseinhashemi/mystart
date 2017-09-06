@@ -62,7 +62,7 @@ $wp_customize->add_control('mystart_team_item_pos_1', array(
 
 
 /* Our Team - Item 1 Avatar */
-$wp_customize->add_setting('mystart_team_item_avatar_1', array('default' => '', 'sanitize_callback' => 'esc_url_raw'));
+$wp_customize->add_setting('mystart_team_item_avatar_1', array('default' => IMAGES . "/team-member.jpg", 'sanitize_callback' => 'esc_url_raw'));
 $wp_customize->add_control(
         new WP_Customize_Image_Control(
         $wp_customize, 'mystart_team_item_avatar_1', array(
@@ -111,7 +111,7 @@ $wp_customize->add_control('mystart_team_item_pos_2', array(
 
 
 /* Our Team - Item 2 Avatar */
-$wp_customize->add_setting('mystart_team_item_avatar_2', array('default' => '', 'sanitize_callback' => 'esc_url_raw'));
+$wp_customize->add_setting('mystart_team_item_avatar_2', array('default' => IMAGES . "/team-member.jpg", 'sanitize_callback' => 'esc_url_raw'));
 $wp_customize->add_control(
         new WP_Customize_Image_Control(
         $wp_customize, 'mystart_team_item_avatar_2', array(
@@ -161,7 +161,7 @@ $wp_customize->add_control('mystart_team_item_pos_3', array(
 
 
 /* Our Team - Item 3 Avatar */
-$wp_customize->add_setting('mystart_team_item_avatar_3', array('default' => '', 'sanitize_callback' => 'esc_url_raw'));
+$wp_customize->add_setting('mystart_team_item_avatar_3', array('default' => IMAGES . "/team-member.jpg", 'sanitize_callback' => 'esc_url_raw'));
 $wp_customize->add_control(
         new WP_Customize_Image_Control(
         $wp_customize, 'mystart_team_item_avatar_3', array(
@@ -207,7 +207,7 @@ $wp_customize->add_control('mystart_team_item_pos_4', array(
 
 
 /* Our Team - Item 4 Avatar */
-$wp_customize->add_setting('mystart_team_item_avatar_4', array('default' => '', 'sanitize_callback' => 'esc_url_raw'));
+$wp_customize->add_setting('mystart_team_item_avatar_4', array('default' => IMAGES . "/team-member.jpg", 'sanitize_callback' => 'esc_url_raw'));
 $wp_customize->add_control(
         new WP_Customize_Image_Control(
         $wp_customize, 'mystart_team_item_avatar_4', array(

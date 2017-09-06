@@ -14,7 +14,7 @@ function mystart_customize_register($wp_customize) {
     
     
 
-    /* ================/
+      /* ================/
      * Services Section 
     /  ================*/
     $wp_customize->add_section('mystart_services_options', array(
@@ -29,7 +29,7 @@ function mystart_customize_register($wp_customize) {
     
     
     
-    /* ================/
+      /* ================/
      * About us Section 
     /  ================*/
     $wp_customize->add_section('mystart_about_options', array(
@@ -43,7 +43,7 @@ function mystart_customize_register($wp_customize) {
     
     
     
-    /* ================/
+      /* ================/
      *  Latest Post
     /  ================*/
     $wp_customize->add_section('mystart_blog_options', array(
@@ -56,7 +56,7 @@ function mystart_customize_register($wp_customize) {
     
     
     
-    /* ================/
+      /* ================/
      *  Testimonials
     /  ================*/
     $wp_customize->add_section('mystart_testimonial_options', array(
@@ -70,7 +70,7 @@ function mystart_customize_register($wp_customize) {
     
     
     
-    /* ================/
+      /* ================/
      *  Our Team
     /  ================*/
     $wp_customize->add_section('mystart_team_options', array(
@@ -80,6 +80,17 @@ function mystart_customize_register($wp_customize) {
     ));
     require_once( get_template_directory() . '/includes/customize-section/customize-team.php' );
     
+    
+    
+      /* ================ /
+     *  Our Clients      /
+    /  ================*/
+    $wp_customize->add_section('mystart_client_options', array(
+        'title' => __('Clients', 'mystart'),
+        'priority' => 30,
+        'panel' => 'mystart_main_options'
+    ));
+    require_once( get_template_directory() . '/includes/customize-section/customize-client.php' );
     
     
     

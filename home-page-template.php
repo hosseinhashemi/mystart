@@ -265,7 +265,7 @@ $mystart_about_bg_color = get_theme_mod('mystart_about_bg_color', 'rgb(36, 3, 67
 
         <div class="row">
 
-            <div class="col-md-12 masonry-blog-grid" >
+            <div class="masonry-blog-grid" >
 
 
 
@@ -283,7 +283,7 @@ $mystart_about_bg_color = get_theme_mod('mystart_about_bg_color', 'rgb(36, 3, 67
                         $image_medium_blog = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
                         ?>
 
-                        <div class="col-md-4 post-item-selector grid-sizer">
+                        <div class=" post-item-selector grid-sizer">
                             <div class="post-item">
 
                                 <div class="post-item__image">
@@ -349,9 +349,9 @@ $mystart_testimonial_item_name_1 = get_theme_mod('mystart_testimonial_item_name_
 $mystart_testimonial_item_name_2 = get_theme_mod('mystart_testimonial_item_name_2', 'Customer 2');
 $mystart_testimonial_item_name_3 = get_theme_mod('mystart_testimonial_item_name_3', 'Customer 3');
 
-$mystart_testimonial_item_pos_1 = get_theme_mod('mystart_testimonial_item_pos_1', "CEO");
-$mystart_testimonial_item_pos_2 = get_theme_mod('mystart_testimonial_item_pos_2', "Developer");
-$mystart_testimonial_item_pos_3 = get_theme_mod('mystart_testimonial_item_pos_3', "Designer");
+$mystart_testimonial_item_url_1 = get_theme_mod('mystart_testimonial_item_url_1', "CEO");
+$mystart_testimonial_item_url_2 = get_theme_mod('mystart_testimonial_item_url_2', "Developer");
+$mystart_testimonial_item_url_3 = get_theme_mod('mystart_testimonial_item_url_3', "Designer");
 
 $mystart_testimonial_item_comment_1 = get_theme_mod('mystart_testimonial_item_comment_1', "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
 $mystart_testimonial_item_comment_2 = get_theme_mod('mystart_testimonial_item_comment_2', "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
@@ -383,7 +383,7 @@ $mystart_testimonial_item_avatar_3 = get_theme_mod('mystart_testimonial_item_ava
                     <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_1; ?>" />
                     <div class="testimonial-item__person">
                         <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_1; ?></h6>
-                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_1; ?></h6>
+                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_url_1; ?></h6>
                     </div>
 
                 </div>
@@ -397,7 +397,7 @@ $mystart_testimonial_item_avatar_3 = get_theme_mod('mystart_testimonial_item_ava
                     <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_2; ?>" />
                     <div class="testimonial-item__person">
                         <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_2; ?></h6>
-                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_2; ?></h6>
+                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_url_2; ?></h6>
                     </div>
 
                 </div>
@@ -411,7 +411,7 @@ $mystart_testimonial_item_avatar_3 = get_theme_mod('mystart_testimonial_item_ava
                     <img class="testimonial-item__img img-responsive img-circle" src="<?php echo $mystart_testimonial_item_avatar_3; ?>" />
                     <div class="testimonial-item__person">
                         <h6 class="testimonial-item__title"><?php echo $mystart_testimonial_item_name_3; ?></h6>
-                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_pos_3; ?></h6>
+                        <h6 class="testimonial-item__pos"><?php echo $mystart_testimonial_item_url_3; ?></h6>
                     </div>
 
                 </div>
@@ -472,10 +472,10 @@ $mystart_team_item_name_2 = get_theme_mod('mystart_team_item_name_2', 'Member 2'
 $mystart_team_item_name_3 = get_theme_mod('mystart_team_item_name_3', 'Member 3');
 $mystart_team_item_name_4 = get_theme_mod('mystart_team_item_name_4', 'Member 4');
 
-$mystart_team_item_pos_1 = get_theme_mod('mystart_team_item_pos_1', "CEO");
-$mystart_team_item_pos_2 = get_theme_mod('mystart_team_item_pos_2', "Developer");
-$mystart_team_item_pos_3 = get_theme_mod('mystart_team_item_pos_3', "Designer");
-$mystart_team_item_pos_4 = get_theme_mod('mystart_team_item_pos_4', "Manager");
+$mystart_team_item_url_1 = get_theme_mod('mystart_team_item_url_1', "CEO");
+$mystart_team_item_url_2 = get_theme_mod('mystart_team_item_url_2', "Developer");
+$mystart_team_item_url_3 = get_theme_mod('mystart_team_item_url_3', "Designer");
+$mystart_team_item_url_4 = get_theme_mod('mystart_team_item_url_4', "Manager");
 
 $mystart_team_item_avatar_1 = get_theme_mod('mystart_team_item_avatar_1', IMAGES . "/team-member.jpg");
 $mystart_team_item_avatar_2 = get_theme_mod('mystart_team_item_avatar_2', IMAGES . "/team-member.jpg");
@@ -505,7 +505,7 @@ $mystart_team_item_avatar_4 = get_theme_mod('mystart_team_item_avatar_4', IMAGES
 
                     <div class="tp-team-item__overlay">
                         <div class="tp-team-item__name"><?php echo $mystart_team_item_name_1; ?></div>
-                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_pos_1; ?></div>
+                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_url_1; ?></div>
                     </div>
 
                 </div>
@@ -524,7 +524,7 @@ $mystart_team_item_avatar_4 = get_theme_mod('mystart_team_item_avatar_4', IMAGES
 
                     <div class="tp-team-item__overlay">
                         <div class="tp-team-item__name"><?php echo $mystart_team_item_name_2; ?></div>
-                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_pos_2; ?></div>
+                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_url_2; ?></div>
                     </div>
 
                 </div>
@@ -543,7 +543,7 @@ $mystart_team_item_avatar_4 = get_theme_mod('mystart_team_item_avatar_4', IMAGES
 
                     <div class="tp-team-item__overlay">
                         <div class="tp-team-item__name"><?php echo $mystart_team_item_name_3; ?></div>
-                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_pos_3; ?></div>
+                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_url_3; ?></div>
                     </div>
 
                 </div>
@@ -562,7 +562,7 @@ $mystart_team_item_avatar_4 = get_theme_mod('mystart_team_item_avatar_4', IMAGES
 
                     <div class="tp-team-item__overlay">
                         <div class="tp-team-item__name"><?php echo $mystart_team_item_name_4; ?></div>
-                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_pos_4; ?></div>
+                        <div class="tp-team-item__pos"><?php echo $mystart_team_item_url_4; ?></div>
                     </div>
 
                 </div>
@@ -584,6 +584,37 @@ $mystart_team_item_avatar_4 = get_theme_mod('mystart_team_item_avatar_4', IMAGES
 
 
 
+
+
+
+
+
+
+<?php
+$mystart_main_client_title = get_theme_mod('mystart_main_client_title', 'OUR CLIENTS');
+$mystart_client_sub_title = get_theme_mod('mystart_client_sub_title', 'View Our Clients');
+
+$mystart_client_item_title_1 = get_theme_mod('mystart_client_item_title_1', 'Client 1');
+$mystart_client_item_title_2 = get_theme_mod('mystart_client_item_title_2', 'Client 2');
+$mystart_client_item_title_3 = get_theme_mod('mystart_client_item_title_3', 'Client 3');
+$mystart_client_item_title_4 = get_theme_mod('mystart_client_item_title_4', 'Client 4');
+$mystart_client_item_title_5 = get_theme_mod('mystart_client_item_title_4', 'Client 5');
+$mystart_client_item_title_6 = get_theme_mod('mystart_client_item_title_4', 'Client 6');
+
+$mystart_client_item_url_1 = get_theme_mod('mystart_client_item_url_1', "#");
+$mystart_client_item_url_2 = get_theme_mod('mystart_client_item_url_2', "#");
+$mystart_client_item_url_3 = get_theme_mod('mystart_client_item_url_3', "#");
+$mystart_client_item_url_4 = get_theme_mod('mystart_client_item_url_4', "#");
+$mystart_client_item_url_5 = get_theme_mod('mystart_client_item_url_5', "#");
+$mystart_client_item_url_6 = get_theme_mod('mystart_client_item_url_6', "#");
+
+$mystart_client_item_logo_1 = get_theme_mod('mystart_client_item_logo_1', IMAGES ."/client/" . "client-01.png");
+$mystart_client_item_logo_2 = get_theme_mod('mystart_client_item_logo_2', IMAGES ."/client/" . "client-02.png");
+$mystart_client_item_logo_3 = get_theme_mod('mystart_client_item_logo_3', IMAGES ."/client/" . "client-03.png");
+$mystart_client_item_logo_4 = get_theme_mod('mystart_client_item_logo_4', IMAGES ."/client/" . "client-04.png");
+$mystart_client_item_logo_5 = get_theme_mod('mystart_client_item_logo_3', IMAGES ."/client/" . "client-05.png");
+$mystart_client_item_logo_6 = get_theme_mod('mystart_client_item_logo_4', IMAGES ."/client/" . "client-06.png");
+?>
 <!-- Our Clients-->
 <section id="ourclient" class="section">             
 
@@ -598,71 +629,72 @@ $mystart_team_item_avatar_4 = get_theme_mod('mystart_team_item_avatar_4', IMAGES
 
         <div class="row">
 
-            <div class="col-md-2">
+            <div class="col-sm-2 col-xs-12">
                 <div class="tp-client">
-                    <a class="tp-client__link" href="#">
-                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-01.png"; ?>" />
+                    <a class="tp-client__link" href="<?php echo $mystart_client_item_url_1; ?>" title="<?php echo $mystart_client_item_title_1; ?>">
+                        <img class="tp-client__img" src="<?php echo $mystart_client_item_logo_1; ?>" />
                     </a>
-
                 </div>
+                <!--/tp-client-->
+            </div>
+            <!--col-md-2-->
+            
+            
+            <div class="col-sm-2 col-xs-12">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="<?php echo $mystart_client_item_url_2; ?>" title="<?php echo $mystart_client_item_title_2; ?>">
+                        <img class="tp-client__img" src="<?php echo $mystart_client_item_logo_2; ?>" />
+                    </a>
+                </div>
+                <!--/tp-client-->
+            </div>
+            <!--col-md-2-->
+            
+            <div class="col-sm-2 col-xs-12">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="<?php echo $mystart_client_item_url_3; ?>" title="<?php echo $mystart_client_item_title_3; ?>">
+                        <img class="tp-client__img" src="<?php echo $mystart_client_item_logo_3; ?>" />
+                    </a>
+                </div>
+                <!--/tp-client-->
+            </div>
+            <!--col-md-2-->
+            
+            <div class="col-sm-2 col-xs-12">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="<?php echo $mystart_client_item_url_4; ?>" title="<?php echo $mystart_client_item_title_4; ?>">
+                        <img class="tp-client__img" src="<?php echo $mystart_client_item_logo_4; ?>" />
+                    </a>
+                </div>
+                <!--/tp-client-->
+            </div>
+            <!--col-md-2-->
+            
+            
+            <div class="col-sm-2 col-xs-12">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="<?php echo $mystart_client_item_url_5; ?>" title="<?php echo $mystart_client_item_title_5; ?>">
+                        <img class="tp-client__img" src="<?php echo $mystart_client_item_logo_5; ?>" />
+                    </a>
+                </div>
+                <!--/tp-client-->
+            </div>
+            <!--col-md-2-->
+            
+            
+            <div class="col-sm-2 col-xs-12">
+                <div class="tp-client">
+                    <a class="tp-client__link" href="<?php echo $mystart_client_item_url_6; ?>" title="<?php echo $mystart_client_item_title_6; ?>">
+                        <img class="tp-client__img" src="<?php echo $mystart_client_item_logo_6; ?>" />
+                    </a>
+                </div>
+                <!--/tp-client-->
             </div>
             <!--col-md-2-->
 
 
-            <div class="col-md-2">
-                <div class="tp-client">
-                    <a class="tp-client__link" href="#">
-                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-02.png"; ?>" />
-                    </a>
-
-                </div>
-            </div>
-            <!--col-md-2-->
 
 
-            <div class="col-md-2">
-                <div class="tp-client">
-                    <a class="tp-client__link" href="#">
-                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-03.png"; ?>" />
-                    </a>
-
-                </div>
-            </div>
-            <!--col-md-2-->
-
-
-            <div class="col-md-2">
-                <div class="tp-client">
-                    <a class="tp-client__link" href="#">
-                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-04.png"; ?>" />
-                    </a>
-
-                </div>
-            </div>
-            <!--col-md-2-->
-
-
-            <div class="col-md-2">
-                <div class="tp-client">
-                    <a class="tp-client__link" href="#">
-                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-05.png"; ?>" />
-                    </a>
-
-                </div>
-            </div>
-            <!--col-md-2-->
-
-
-
-            <div class="col-md-2">
-                <div class="tp-client">
-                    <a class="tp-client__link" href="#">
-                        <img class="tp-client__img" src="<?php echo IMAGES . "/client/" . "client-06.png"; ?>" />
-                    </a>
-
-                </div>
-            </div>
-            <!--col-md-2-->
 
 
 
