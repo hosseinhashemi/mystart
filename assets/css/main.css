@@ -1090,8 +1090,6 @@ ul.slimmenu li a:focus::after {
     position: relative;
     z-index: 1;
     padding: 20px;
-    border-bottom: 1px solid rgba(250,240,215,1);
-    border-top:  1px solid rgba(250,240,215,1);
     transition: all 0.4s ease-in-out;
 }
 .testimonial-item:hover:after{
@@ -1106,14 +1104,8 @@ ul.slimmenu li a:focus::after {
     top: 0;
     left: 0;
     z-index: -1;
-    background: rgba(244,247,246,1);
-    background: -moz-linear-gradient(left, rgba(244,247,246,1) 0%, rgba(250,240,215,0.5) 47%, rgba(244,247,246,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(244,247,246,1)), color-stop(47%, rgba(250,240,215,0.5)), color-stop(100%, rgba(244,247,246,1)));
-    background: -webkit-linear-gradient(left, rgba(244,247,246,1) 0%, rgba(250,240,215,0.5) 47%, rgba(244,247,246,1) 100%);
-    background: -o-linear-gradient(left, rgba(244,247,246,1) 0%, rgba(250,240,215,0.5) 47%, rgba(244,247,246,1) 100%);
-    background: -ms-linear-gradient(left, rgba(244,247,246,1) 0%, rgba(250,240,215,0.5) 47%, rgba(244,247,246,1) 100%);
-    background: linear-gradient(to right, rgba(244,247,246,1) 0%, rgba(250,240,215,0.5) 47%, rgba(244,247,246,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f7f6', endColorstr='#f4f7f6', GradientType=1 );
+    background: rgba(255,255,255,0.9);
+    
 }
 .testimonial-item__img{
     width: 70px;
