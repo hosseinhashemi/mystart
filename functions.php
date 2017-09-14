@@ -113,10 +113,12 @@ if (!function_exists('mystart_post_meta')) {
             if (get_the_tag_list()) {
                 echo get_the_tag_list('<ul class="meta-tags-list"><li>', '</li><li>', '</li></ul>');
             }
-            echo '<p class = "post-meta">' . __('Posted by', 'mystart');
+            echo '<p class = "post-meta">' . __('By', 'mystart');
             printf(' <a href = "%1$s" rel="author">%2$s</a> ', esc_url(get_the_author_link()), get_the_author());
             _e('on', 'mystart');
-            printf(__('Author Archives: %s', 'mystart'), '<span class="vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta("ID"))) . '" title="' . esc_attr(get_the_author()) . '" rel="me">' . get_the_author() . '</a></span>');
+            
+            
+            //printf(__('Author Archives: %s', 'mystart'), '<span class="vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta("ID"))) . '" title="' . esc_attr(get_the_author()) . '" rel="me">' . get_the_author() . '</a></span>');
 
 
 
