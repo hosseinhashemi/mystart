@@ -1,40 +1,50 @@
 <?php
 /*
- # ===========================================
- # content.php
- # 
- # The standard content template.
- # ===========================================
-*/
+  # ===========================================
+  # content.php
+  #
+  # The standard content template.
+  # ===========================================
+ */
 ?>
 
 <div id="post-<?php the_ID(); ?>"  <?php post_class('post-preview'); ?> >
+    <div class="tp-post__img">
+        <a href = "<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+            <?php
+            if (has_post_thumbnail()) :
+                ?>
 
+                <?php
+                the_post_thumbnail('large', array('class' => 'img-responsive'));
+                ?>
 
-    <?php
-    if (has_post_thumbnail()) :
+            <?php endif; ?>
+        </a>
+        <div class="tp-post__meta-wrapper">
+            <?php
+        /* Post Meta */
+        mystart_post_meta();
         ?>
+        </div>
+    </div>
+    <!--/tp-post__img-->
+    <div class="tp-post__content">
 
-        <?php
-        the_post_thumbnail('medium', array('class' => 'img-responsive'));
-        ?>
-
-    <?php endif; ?>
-    <a href = "<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-        <h2 class = "post-title">
-            <?php echo get_the_title(); ?>
+        <h2 class = "tp-post__title">
+            <a href = "<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                <?php echo get_the_title(); ?>
+            </a>
         </h2>
 
-    </a>
-    <div class = "post-subtitle">
-        <?php echo get_the_excerpt(); ?>
+
+        <div class = "post-subtitle">
+            <?php  the_excerpt(); ?>
+        </div>
+
+        
     </div>
-
-    <?php
-    /* Post Meta */
-    mystart_post_meta();
-    ?>
-
+    <!--/tp-post__content-->
 </div>
 <hr>
 

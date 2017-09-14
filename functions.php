@@ -105,7 +105,7 @@ if (!function_exists('mystart_post_meta')) {
         if (get_post_type() === 'post') {
 
             $categories_list = get_the_category_list(', ');
-
+            
             if ($categories_list) {
                 echo '<p class = "post-categories">' . $categories_list . '</p>';
             }
@@ -274,9 +274,7 @@ if (!function_exists('mystart_scripts')) {
         wp_enqueue_style('percircle-css', THEMEROOT . '/assets/css/percircle.min.css');
         wp_enqueue_style('main-css', THEMEROOT . '/assets/css/main.css');
         wp_enqueue_style('fontawesome', THEMEROOT . '/assets/css/font-awesome.min.css');
-        wp_enqueue_style('google-font',  'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700');
-        
-        
+        wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700');
     }
 
     add_action('wp_enqueue_scripts', 'mystart_scripts');
@@ -303,15 +301,15 @@ if (!function_exists('mystart_comment_nav')) {
             <nav class="navigation comment-navigation" role="navigation">
                 <h2 class="screen-reader-text"><?php _e('Comment navigation', 'mystart'); ?></h2>
                 <div class="nav-links">
-                    <?php
-                    if ($prev_link = get_previous_comments_link(__('Older Comments', 'mystart'))) :
-                        printf('<div class="nav-previous">%s</div>', $prev_link);
-                    endif;
+            <?php
+            if ($prev_link = get_previous_comments_link(__('Older Comments', 'mystart'))) :
+                printf('<div class="nav-previous">%s</div>', $prev_link);
+            endif;
 
-                    if ($next_link = get_next_comments_link(__('Newer Comments', 'mystart'))) :
-                        printf('<div class="nav-next">%s</div>', $next_link);
-                    endif;
-                    ?>
+            if ($next_link = get_next_comments_link(__('Newer Comments', 'mystart'))) :
+                printf('<div class="nav-next">%s</div>', $next_link);
+            endif;
+            ?>
                 </div><!-- .nav-links -->
             </nav><!-- .comment-navigation -->
             <?php
@@ -340,10 +338,9 @@ function _custom_nav_menu_item($title, $url, $order, $parent = 0) {
     return $item;
 }
 
+add_filter('wp_nav_menu_items', 'add_search_to_nav', 10, 2);
 
-add_filter( 'wp_nav_menu_items', 'add_search_to_nav', 10, 2 );
-
-function add_search_to_nav( $items, $args ){
+function add_search_to_nav($items, $args) {
     $items .= '<li><a href="#search"><span class="fa fa-search"></span></a></li>';
     return $items;
 }
@@ -361,8 +358,22 @@ add_action('after_setup_theme', 'mystart_content_width', 0);
 
 
 /* -------------------------------------------
- *  10 - CUSTOMIZER
+ *  10 - Excerpt Length
+ * ------------------------------------------- */
+
+function mystart_excerpt_length($length) {
+    return 20;
+}
+
+add_filter('excerpt_length', 'mystart_excerpt_length', 999);
+
+
+
+
+
+/* -------------------------------------------
+ *  11 - CUSTOMIZER
  * ------------------------------------------- */
 //require THEMEROOT . '/includes/customizer.php';
-load_template( get_template_directory() . '/includes/customizer.php' );
-load_template( get_template_directory() . '/includes/controls/select/post-dropdown-custom-control.php' );
+load_template(get_template_directory() . '/includes/customizer.php');
+load_template(get_template_directory() . '/includes/controls/select/post-dropdown-custom-control.php');
