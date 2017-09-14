@@ -1293,6 +1293,29 @@ Post styles
 .tp-post__meta-wrapper{
 
 }
+
+
+/*
+Single Blog
+*/
+.tp-single-post__hero  a{
+    color:#fff;
+    
+}
+
+
+
+
+
+/*
+footer
+*/
+.tp-footer{
+    background: #f8f8f8;
+}
+
+
+
 /*
 -----------------------------
 Global Responsive styles

@@ -10,7 +10,7 @@
 
 
 <!-- Footer -->
-<footer>
+<footer class="tp-footer">
 
     <div class="footer-widget">
 
