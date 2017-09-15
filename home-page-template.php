@@ -483,7 +483,7 @@ $mystart_team_item_avatar_3 = get_theme_mod('mystart_team_item_avatar_3', IMAGES
 $mystart_team_item_avatar_4 = get_theme_mod('mystart_team_item_avatar_4', IMAGES . "/team-member.jpg");
 ?>
 <!-- Our Team Section-->
-<section id="ourteam" class="section">             
+<section id="tp-our-team" class="section">             
 
 
     <div class="section__header">

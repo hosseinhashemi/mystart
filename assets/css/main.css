@@ -1164,7 +1164,10 @@ section#blog {
 
 
 
-
+#tp-our-team{
+    background-color: #f8f8f8;
+    padding-bottom: 100px;
+}
 .tp-team-item{
     position: relative;
     width: 100%;
