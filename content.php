@@ -22,7 +22,7 @@
     <?php endif; ?>
     <a href = "<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
         <h2 class = "post-title">
-            <?php echo get_the_title(); ?>
+         <div><?php echo get_the_title(); ?></div>
         </h2>
 
     </a>
