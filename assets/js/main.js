@@ -49,10 +49,10 @@ jQuery(document).ready(function ($) {
 
 
     //responsive menu
-    $('#menu-mainmenu').slimmenu(
+    $('.slimmenu').slimmenu(
             {
                 resizeWidth: '768',
-                collapserTitle: 'Main Menu',
+                collapserTitle: '',
                 animSpeed: 'medium',
                 indentChildren: true,
                 childrenIndenter: '&raquo;'
@@ -63,12 +63,23 @@ jQuery(document).ready(function ($) {
         // Optional parameters
         loop: true,
         speed: 1000,
-        nextButton:".swiper-button-next",
-        prevButton:".swiper-button-prev",
-        autoplay:4000
-    })
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        autoplay: 4000
+    });
 
 
+    //About-us
+    $("#circle-1").percircle();
+    $("#circle-2").percircle();
+    $("#circle-3").percircle();
+    $("#circle-4").percircle();
 
+    $('.masonry-blog-grid').masonry({
+        itemSelector: '.post-item-selector',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+//        horizontalOrder: true
+    });
 
 });

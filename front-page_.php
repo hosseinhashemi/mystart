@@ -23,8 +23,10 @@ if (has_post_thumbnail()) {
     $feat_image_url = wp_get_attachment_url(get_post_thumbnail_id());
     $intro_background = 'style="background-image: url(' . $feat_image_url . ')"';
 } else {
-    $intro_background = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' . ');background-size:cover;"';
+    $intro_background = 'style="background-image: url(' . IMAGES . '/home-bg-3.jpg' . ');background-size:cover;"';
 }
+$intro_background_2='style="background-image: url(' . IMAGES . '/home-bg-2.jpg' . ');background-size:cover;"';
+$intro_background_3='style="background-image: url(' . IMAGES . '/home-bg.jpg' . ');background-size:cover;"';
 ?>
 
 <div class="swiper-container">

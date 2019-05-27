@@ -24,7 +24,7 @@ get_header();
             $intro_background = 'style="background-image: url(' . $feat_image_url . ')"';
         }
         ?>
-        <header class="intro-header" <?php if (has_post_thumbnail()) echo $intro_background; ?>>
+        <header class="intro-header tp-single-post__hero" <?php if (has_post_thumbnail()) echo $intro_background; ?>>
             <div class="bg-overlay"></div>
             <div class="container">
                 <div class="row">
@@ -64,12 +64,6 @@ get_header();
 
 
 
-                            <!-- Pager -->
-                            <ul class="pager">
-                                <li class="next">
-                                    <a href="#">Older Posts &rarr;</a>
-                                </li>
-                            </ul>
 
                         </div>
                         <div>

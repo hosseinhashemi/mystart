@@ -31,9 +31,9 @@ if (has_post_thumbnail()) {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>This is Blog home</h1>
+                    <h1><?php _e("BLOG","mystart"); ?></h1>
                     <hr class="small">
-                    <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                    <span class="subheading"><?php _e("View our posts","mystart"); ?></span>
                 </div>
             </div>
         </div>

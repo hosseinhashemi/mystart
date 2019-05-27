@@ -10,7 +10,7 @@
 
 
 <!-- Footer -->
-<footer>
+<footer class="tp-footer">
 
     <div class="footer-widget">
 
@@ -60,10 +60,7 @@
 
                 <p class = "copyright text-muted">Copyright &copy;
                 Your Website 2016</p>
-                <p>
-                <a href = "<?php echo esc_url( __( 'https://wordpress.org/', 'mystart' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mystart' ), 'WordPress' );
-                ?></a>
-                </p>
+                
             </div>
         </div>
     </div>
