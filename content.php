@@ -20,7 +20,12 @@
     ?>
     <div class="tp-post__img" <?php echo $tp_post_img_style; ?> >
 
-        <a class="tp-post__img-link" href = "<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+
+
+
+    <a href = "<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        <h2 class = "post-title">
+         <div><?php echo get_the_title(); ?></div>
 
         </a>
         
