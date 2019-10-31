@@ -6,10 +6,11 @@
   # footer contents.
   # ===========================================
  */
-?>  
+?>
 
 
 <!-- Footer -->
+<!-- Check it by master branch -->
 <footer class="tp-footer">
 
     <div class="footer-widget">
@@ -22,32 +23,32 @@
                     <?php dynamic_sidebar( 'footer-1' ); ?>
                 </div>
                 <?php } ?>
-                
-                
+
+
                 <?php if ( is_active_sidebar( 'footer-2' ) ) { ?>
                 <div class="widget-column col-md-3 footer-widget-2">
                     <?php dynamic_sidebar( 'footer-2' ); ?>
                 </div>
                 <?php } ?>
-                
-                
+
+
                 <?php if ( is_active_sidebar( 'footer-3' ) ) { ?>
                 <div class="widget-column col-md-3 footer-widget-3">
                     <?php dynamic_sidebar( 'footer-3' ); ?>
                 </div>
                 <?php } ?>
-                
-                
+
+
                 <?php if ( is_active_sidebar( 'footer-4' ) ) { ?>
                 <div class="widget-column col-md-3 footer-widget-4">
                     <?php dynamic_sidebar( 'footer-4' ); ?>
                 </div>
                 <?php } ?>
-                
-                
-                
 
-                
+
+
+
+
 
                 </div><!--row -->
                 </di><!--container -->
@@ -60,7 +61,7 @@
 
                 <p class = "copyright text-muted">Copyright &copy;
                 Your Website 2016</p>
-                
+
             </div>
         </div>
     </div>
