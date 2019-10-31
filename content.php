@@ -2,7 +2,7 @@
 /*
  # ===========================================
  # content.php
- # 
+ #
  # The standard content template.
  # ===========================================
 */
@@ -33,8 +33,8 @@
     <?php
     /* Post Meta */
     mystart_post_meta();
+    echo "This is Rebase";
     ?>
 
 </div>
 <hr>
-
