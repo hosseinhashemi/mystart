@@ -11,6 +11,14 @@
 
 <?php
 /* Load header.php  */
+/* Load header.php  */
+/* Load header.php  */
+/* Load header.php  */
+/* Load header.php  */
+/* Load header.php  */
+/* Load header.php  */
+/* Load header.php  */
+/* Load header.php  */
 get_header();
 ?>
 
@@ -94,5 +102,3 @@ if (has_post_thumbnail()) {
 /* Load footer.php  */
 get_footer();
 ?>
-
-
