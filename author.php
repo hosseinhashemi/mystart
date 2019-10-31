@@ -18,14 +18,7 @@ get_header();
 
 
 <!-- Page Header -->
-<?php
-if (has_post_thumbnail()) {
-    $feat_image_url = wp_get_attachment_url(get_post_thumbnail_id());
-    $intro_background = 'style="background-image: url(' . $feat_image_url . ')"';
-} else {
-    $intro_background = 'style="background-image: url(' . IMAGES . '/home-bg.jpg' . ')"';
-}
-?>
+
 <header class="intro-header" <?php if ($intro_background) echo $intro_background; ?>>
     <div class="bg-overlay"></div>
     <div class="container">
@@ -45,7 +38,7 @@ if (has_post_thumbnail()) {
                             <?php echo get_avatar(get_the_author_meta('user_email')); ?>
                         </div>
                         <div class="author-name">
-                            <span><?php _e('About','mystart'); ?></span> <span><?php the_author_meta('first_name'); ?></span> <span><?php the_author_meta('first_name'); ?></span>  
+                            <span><?php _e('About','mystart'); ?></span> <span><?php the_author_meta('first_name'); ?></span> <span><?php the_author_meta('first_name'); ?></span>
                         </div>
                         <div class="author-description">
                             <?php echo get_the_author_meta('description'); ?>
@@ -107,5 +100,3 @@ if (has_post_thumbnail()) {
 /* Load footer.php  */
 get_footer();
 ?>
-
-
